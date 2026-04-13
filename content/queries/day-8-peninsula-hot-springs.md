@@ -1,7 +1,7 @@
 ---
 title: "Day 8 — Jul 8: Hot Springs + Return to Melbourne"
-created: 2025-07-08
-updated: 2025-07-08
+created: 2026-04-13
+updated: 2026-04-13
 type: itinerary-day
 tags: [itinerary, day-8, hot-springs, mornington-peninsula, return-to-melbourne]
 sources: [raw/articles/hot-springs-peninsula-research.md]
@@ -9,19 +9,40 @@ sources: [raw/articles/hot-springs-peninsula-research.md]
 
 # Day 8 — Jul 8 (Tuesday): Peninsula Hot Springs + Return to Melbourne
 
+## Map — Hot Springs + Peninsula
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.80%2C-38.40%2C145.05%2C-38.20&layer=mapnik&marker=-38.2900%2C144.9200"
+  allowfullscreen>
+</iframe>
+
+**Stops:**
+- [Peninsula Hot Springs](https://www.google.com/maps/place/Peninsula+Hot+Springs/) — Mount Martha, Bath House
+- [Point Nepean National Park](https://www.google.com/maps/place/Point+Nepean+National+Park/) — Former military fortifications, coastal walks
+- [Rosebud](https://www.google.com/maps/place/Rosebud+VIC/) — Lunch / beach
+- [Sorrento](https://www.google.com/maps/place/Sorrento+VIC/) — Upmarket seaside town
+- Return to [Melbourne CBD](https://www.google.com/maps/dir/Peninsula+Hot+Springs/Melbourne+CBD/)
+
 ## Mornington Peninsula Hot Springs
 
-**Website:** peninsulahotsprings.com  
-**Location:** Mount Martha — ~20 min / 18 km from Rye  
+**Website:** peninsulahotsprings.com
+**Location:** Mount Martha — ~20 min / 18 km from Rye
 **Book:** Online — sells out weeks ahead
 
-### Actual Ticket Prices (2026)
+### Actual Ticket Prices (2026 — VERIFIED from official booking site)
 
-| Option | Price (TWD) | Duration |
-|--------|-------------|----------|
-| **Bath House** (general entry) | ~~NT$1,167/p | 2–3 hours |
-| **Full Day Pass** | ~~NT$1,684/p | 5 hours |
-| **Hilltop Pool** | +~NT$449–NT$673 | add-on to Bath House |
+| Option | Price (AUD) | Price (TWD) | Duration |
+|--------|-------------|-------------|----------|
+| **Revitalise Bath House** (standard entry) | $80 | ~NT$1,795 | 2–3 hours |
+| **Reset Bathing** (twilight, after 6pm) | $125 | ~NT$2,804 | 2–3 hours |
+| **Moonlit Bathing** (Spa Dreaming Centre) | $80 | ~NT$1,795 | ~2 hours |
+
+> Note: "Full Day Pass" and "Hilltop Pool" no longer appear in current 2026 pricing. Standard Bath House entry is now $80 AUD.
 
 ### Session Times
 
@@ -70,15 +91,17 @@ Options:
 
 ## Budget
 
-| Item | Cost (TWD) |
-|------|-----------|
-| Hot Springs (Bath House × 2) | ~~NT$2,335 |
-| Lunch | ~~NT$673–NT$1,123 |
-| Wine tasting (optional) | ~~NT$449–NT$673 |
-| Petrol | ~~NT$336–NT$449 |
-| Accommodation (Night 8, Melbourne CBD) | ~~NT$3,818–NT$4,716 |
-| Dinner | ~~NT$1,123–NT$1,796 |
-| **Total for Day 8** | **~~NT$8,736–NT$11,903** |
+| Item | Cost (AUD) | Cost (TWD) |
+|------|-------------|------------|
+| Hot Springs (Bath House × 2) | $160 | ~NT$3,590 |
+| Lunch | $30–$50 | ~NT$673–NT$1,122 |
+| Wine tasting (optional) | $20–$30 | ~NT$449–NT$673 |
+| Petrol | $15–$20 | ~NT$337–NT$449 |
+| Accommodation (Night 8, Melbourne CBD) | $170–$210 | ~NT$3,815–NT$4,712 |
+| Dinner | $50–$80 | ~NT$1,122–NT$1,795 |
+| **Total for Day 8** | | **~NT$6,986–NT$12,341** |
+
+> Budget updated with 2026 rates (AUD/TWD = 22.44, verified Apr 13, 2026).
 
 ## Related
 

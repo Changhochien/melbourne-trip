@@ -9,8 +9,23 @@ sources: [raw/articles/wikivoyage-melbourne.md, raw/articles/melbourne-transport
 
 # Day 1 — Jul 1 (Tuesday): Arrival
 
-> Flights: Scoot TR873 TPE→SIN 01:35→06:00 | TR38 SIN→MEL 11:05→20:20  
+> Flights: Scoot TR873 TPE→SIN 01:35→06:00 | TR38 SIN→MEL 11:05→20:20
 > Arrival estimate: ~21:00 MEL after immigration + bags
+
+## Map — MEL Airport to CBD
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.74%2C-37.82%2C144.98%2C-37.65&layer=mapnik&marker=-37.7350%2C144.8600"
+  allowfullscreen>
+</iframe>
+
+**Key stops:**
+- [MEL Terminal 2](https://www.google.com/maps/dir/Melbourne+Airport+T2/) → [Southern Cross Station](https://www.google.com/maps/dir/Melbourne+Airport+T2/Southern+Cross+Station+Melbourne/) (SkyBus, ~30 min)
 
 ## Tonight — Light and Easy
 

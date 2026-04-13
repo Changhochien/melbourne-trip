@@ -4,6 +4,8 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-04-13 | Total pages: 35
 
+> **Note:** Day 7 and Day 8 pages repriced with 2026 AUD rates (Apr 13, 2026).
+
 ## Entities
 
 <!-- Alphabetical within section -->

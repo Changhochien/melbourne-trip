@@ -11,6 +11,31 @@ sources: [raw/articles/day-9-suggestions.md, raw/articles/kkday-tour-research.md
 
 > Today is flexible. Yarra Valley is the plan — wine country, wildlife, scenic. But if weather is bad, swap to a Melbourne rain day (State Library + NGV + shopping).
 
+## Map — Option A: Yarra Valley
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=145.10%2C-37.85%2C145.60%2C-37.55&layer=mapnik&marker=-37.7000%2C145.3500"
+  allowfullscreen>
+</iframe>
+
+**Stops (Yarra Valley self-drive):**
+- [Healesville Sanctuary](https://www.google.com/maps/place/Healesville+Sanctuary/) — Australian wildlife
+- [Yering Station](https://www.google.com/maps/place/Yering+Station+Winery/) — Historic winery, cellar door
+- [Oakridge Wines](https://www.google.com/maps/place/Oakridge+Wines/) — Award-winning chardonnay
+- [Coldstream Hills](https://www.google.com/maps/place/Coldstream+Hills/) — Good value cellar door
+- [Healesville CBD](https://www.google.com/maps/place/Healesville+VIC/) — Lunch
+
+**Option B: Melbourne Rain Day route:**
+- [State Library Victoria](https://www.google.com/maps/place/State+Library+Victoria/) — Free rooftop, stunning reading room
+- [NGV International](https://www.google.com/maps/place/NGV+International/) — Free general entry
+- [Degraves Street / Fed Square](https://www.google.com/maps/place/Degraves+Street/) — Lunch
+- [DFO South Wharf](https://www.google.com/maps/place/DFO+South+Wharf/) — Outlet shopping
+
 ## Option A: Yarra Valley Self-Drive (Plan)
 
 **Best if weather looks decent.** Self-drive gives you flexibility and costs less for 2 people than a guided tour.

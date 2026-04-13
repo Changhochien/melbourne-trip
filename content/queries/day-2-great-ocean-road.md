@@ -11,6 +11,24 @@ sources: [raw/articles/wikivoyage-great-ocean-road.md, raw/articles/kkday-tour-r
 
 > Longest day of the trip. Depart ~7:30 AM, return ~9:30 PM. Coastal wind is brutal in July — dress warm.
 
+## Map — Great Ocean Road Route
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=143.50%2C-38.70%2C144.50%2C-38.00&layer=mapnik&marker=-38.3500%2C144.0000"
+  allowfullscreen>
+</iframe>
+
+**Tour stops:**
+- [Lorne](https://www.google.com/maps/place/Lorne+VIC/) — Coffee stop
+- [Apollo Bay](https://www.google.com/maps/place/Apollo+Bay+VIC/) — Lunch
+- [Twelve Apostles](https://www.google.com/maps/place/Twelve+Apostles/) — Main stop
+- [Loch Ard Gorge](https://www.google.com/maps/place/Loch+Ard+Gorge/)
+
 ## Today's Plan
 
 Full-day tour via KKday. The Great Ocean Road is one of the world's most scenic coastal drives, and this tour covers the highlights without requiring self-navigation.

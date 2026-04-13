@@ -11,6 +11,22 @@ sources: [raw/articles/sovereign-hill-research.md]
 
 > Gold rush history. Open-air 1850s town. Plan 3-4 hours minimum.
 
+## Map — Melbourne to Sovereign Hill (Ballarat)
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=143.60%2C-37.75%2C144.00%2C-37.45&layer=mapnik&marker=-37.5600%2C143.8500"
+  allowfullscreen>
+</iframe>
+
+**Stops:**
+- [Sovereign Hill](https://www.google.com/maps/place/Sovereign+Hill/) — Goldfields, open-air museum (1hr drive from Melbourne)
+- [Ballarat CBD](https://www.google.com/maps/place/Ballarat+VIC/) — Lunch in town after Sovereign Hill
+
 ## Booking Links
 
 | Vendor | URL | Typical Price |

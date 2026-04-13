@@ -72,3 +72,40 @@
 - SCHEMA.md updated: Raw Sources section now documents graph visibility convention
 - SCHEMA.md updated: orphan check rule scoped to L2 only; raw/ excluded
 - All 24 raw files confirmed cited in L2 frontmatter `sources:` fields
+
+## [2026-04-13] update | Mornington Peninsula repricing
+- Repriced with 2026 AUD data (verified Apr 13, 2026):
+  - AUD/TWD = 22.44 (x-rates.com)
+  - Car rental: Kayak shows economy $24–73/day (July peak); Kayak aggregate confirmed realistic mid-range $35–55 AUD/day
+  - Peninsula Hot Springs: confirmed from official booking site (secure.peninsulahotsprings.com) — Revitalise Bath House $80 AUD, Reset Bathing $125 AUD
+  - Note: "Full Day Pass" and "Hilltop Pool" no longer listed in 2026 pricing
+  - Accommodation: Airbnb/booking rates updated ~$130–350 AUD/night range
+  - Car insurance ~$20–30/day AUD (full coverage)
+- Files updated:
+  - raw/articles/hot-springs-peninsula-research.md (created date corrected, prices updated)
+  - raw/articles/mornington-peninsula-accommodation.md (created date corrected, prices updated)
+  - queries/tour-details-and-prices.md (hot springs prices corrected, note added)
+  - queries/day-7-mornington-peninsula.md (car rental table, accommodation, budget updated)
+  - queries/day-8-peninsula-hot-springs.md (hot springs prices, budget updated)
+  - queries/round2-optimizations.md (accommodation prices updated)
+- Files not modified (no changes needed):
+  - entities/mornington-peninsula.md (general entity page, no specific prices)
+  - queries/day-trip-comparison.md (side-by-side comparison uses per-person estimates, not day-trip breakdown)
+
+## [2026-04-13] update | Embedded maps added to all days
+- Added OpenStreetMap iframe embeds to all 10 day itinerary pages
+- Each map section includes a bounding box covering all day locations
+- Added per-stop Google Maps links for routing in browser/app
+- Maps use OSM embed (no API key required, works in Obsidian preview)
+- Files updated:
+  - queries/day-1-arrival.md — MEL T2 to Southern Cross
+  - queries/day-2-great-ocean-road.md — Lorne, Apollo Bay, Twelve Apostles, Loch Ard Gorge
+  - queries/day-3-sovereign-hill.md — Melbourne to Sovereign Hill/Ballarat
+  - queries/day-4-markets-cbd.md — QVM + laneways walk
+  - queries/day-5-fitzroy-st-kilda.md — Tram routes, Fitzroy streets, St Kilda
+  - queries/day-6-puffing-billy-phillip-island.md — Dandenong Ranges + Phillip Island
+  - queries/day-7-mornington-peninsula.md — Peninsula self-drive route
+  - queries/day-8-peninsula-hot-springs.md — Hot springs + peninsula
+  - queries/day-9-yarra-valley-or-free-day.md — Yarra Valley + rain day options
+  - queries/day-10-departure.md — CBD morning + SkyBus to airport
+

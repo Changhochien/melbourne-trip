@@ -1,7 +1,7 @@
 ---
 title: "Day 7 — Jul 7: Self-Drive to Mornington Peninsula"
-created: 2025-07-07
-updated: 2025-07-07
+created: 2026-04-13
+updated: 2026-04-13
 type: itinerary-day
 tags: [itinerary, day-7, mornington-peninsula, self-drive, rye]
 sources: [raw/articles/wikivoyage-mornington-peninsula.md, raw/articles/mornington-peninsula-accommodation.md, raw/articles/hot-springs-peninsula-research.md]
@@ -11,18 +11,38 @@ sources: [raw/articles/wikivoyage-mornington-peninsula.md, raw/articles/morningt
 
 > **Book car rental NOW.** July school holidays fill up. Pick up in Melbourne CBD morning of Day 7.
 
+## Map — Melbourne to Mornington Peninsula
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.75%2C-38.40%2C145.10%2C-37.95&layer=mapnik&marker=-38.1800%2C144.9200"
+  allowfullscreen>
+</iframe>
+
+**Stops (self-drive route):**
+- [Cape Schanck](https://www.google.com/maps/place/Cape+Schanck+VIC/) — Lighthouse walk
+- [Arthurs Seat](https://www.google.com/maps/place/Arthurs+Seat+VIC/) — Panoramic views of Port Phillip Bay
+- [Red Hill](https://www.google.com/maps/place/Red+Hill+VIC/) — Wine region, cellar doors
+- [Mount Martha](https://www.google.com/maps/place/Mount+Martha+VIC/) — Hot springs location
+- [Rye](https://www.google.com/maps/place/Rye+VIC/) — Accommodation base
+
 ## Car Rental — BOOK NOW
 
-| Company | Price/Day (est.) | Notes |
-|---------|-----------------|-------|
-| Thrifty | ~NT$1,347–NT$2,021 | More reliable, good service |
-| Budget | ~NT$1,235–NT$1,909 | Similar to Thrifty |
-| JUCY | ~NT$1,010–NT$1,572 | Cheaper, older cars |
-| Smile | ~NT$1,123–NT$1,684 | Budget option |
+| Company | Price/Day (AUD) | Price/Day (TWD) | Notes |
+|---------|-----------------|-----------------|-------|
+| Economy (Kayak aggregate) | $35–$55 | ~NT$785–NT$1,233 | Verified Apr 2026 |
+| Thrifty/Budget | $55–$80 | ~NT$1,233–NT$1,794 | More reliable |
+| JUCY/Smile | $40–$60 | ~NT$897–NT$1,345 | Budget, older cars |
 
-**Insurance:** Full coverage worth it. Quote typically adds ~NT$449–NT$673/day on top.
+**Insurance:** Full coverage recommended ~NT$449–NT$673/day on top.
 
-**Pick up:** Day 7 morning in Melbourne CBD  
+> Note: Kayak shows economy cars from $24/day (premium/no-frills) to $73/day (standard). July school holidays push peak-season rates higher. Book early.
+
+**Pick up:** Day 7 morning in Melbourne CBD
 **Return:** Day 8 afternoon (when you drive back to Melbourne)
 
 ## Drive to [[mornington-peninsula]] (Rye)
@@ -58,11 +78,11 @@ No set agenda. The peninsula is about scenic drives, wine, and coastal walks.
 
 **Book your Mornington Peninsula accommodation NOW if not already booked.** July school holidays = booked solid.
 
-Options:
-- **Rye Airbnb** — 2BR beachside apartment, ~NT$3,369–NT$5,615/night
-- **RACV Cape Schanck Resort** — Full resort, pool + spa, ~NT$5,615–NT$7,861/night
-- **Peppers Moonah Links** — Resort near hot springs, ~NT$4,941–NT$6,288/night
-- **Rye Hotel** — Basic but convenient, ~NT$2,919–NT$3,818/night
+Options (2026 verified rates):
+- **Rye Airbnb** — 2BR beachside apartment, ~$150–280 AUD/night (~NT$3,365–NT$6,280)
+- **RACV Cape Schanck Resort** — Full resort, pool + spa, ~$250–350 AUD/night (~NT$5,610–NT$7,850)
+- **Peppers Moonah Links** — Resort near hot springs, ~$220–280 AUD/night (~NT$4,935–NT$6,280)
+- **Rye Hotel** — Basic but convenient, ~$130–170 AUD/night (~NT$2,915–NT$3,815)
 
 ## Evening
 
@@ -72,14 +92,16 @@ Options:
 
 ## Budget
 
-| Item | Cost (TWD) |
-|------|-----------|
-| Car rental (2 days, including insurance) | ~~NT$3,369–NT$4,492 |
-| Petrol (Melbourne CBD to Rye + peninsula) | ~~NT$673–NT$1,123 |
-| Lunch | ~~NT$898–NT$1,347 |
-| Wine tastings (3 wineries × ~NT$224/p) | ~~NT$1,347 |
-| Accommodation | ~~NT$3,369–NT$5,615 |
-| **Total for Day 7** | **~~NT$9,657–NT$13,925** |
+| Item | Cost (AUD) | Cost (TWD) |
+|------|-------------|------------|
+| Car rental (2 days, economy incl. insurance) | $110–$200 | ~NT$2,468–NT$4,488 |
+| Petrol (Melbourne CBD to Rye + peninsula) | $35–$55 | ~NT$785–NT$1,234 |
+| Lunch | $40–$60 | ~NT$898–NT$1,346 |
+| Wine tastings (3 wineries × ~NT$224/p) | $30 | ~NT$673 |
+| Accommodation (Rye, 1 night) | $150–$280 | ~NT$3,366–NT$6,283 |
+| **Total for Day 7** | | **~NT$8,190–NT$14,024** |
+
+> Budget updated with 2026 rates (AUD/TWD = 22.44, verified Apr 13, 2026).
 
 ## Related
 

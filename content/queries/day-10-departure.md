@@ -9,9 +9,30 @@ sources: [raw/articles/wikivoyage-melbourne.md, raw/articles/melbourne-stay-tran
 
 # Day 10 — Jul 10 (Thursday): Departure
 
-> Flight: Scoot TR39 MEL→SIN 21:35 → TR874 SIN→TPE 09:30+1 (Jul 11)  
-> SkyBus: ~30 min from Southern Cross to MEL T2  
+> Flight: Scoot TR39 MEL→SIN 21:35 → TR874 SIN→TPE 09:30+1 (Jul 11)
+> SkyBus: ~30 min from Southern Cross to MEL T2
 > **Leave Southern Cross by 2:00–2:15 PM at latest.**
+
+## Map — Day 10 Morning Route + Airport
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.93%2C-37.82%2C144.98%2C-37.79&layer=mapnik&marker=-37.8050%2C144.9550"
+  allowfullscreen>
+</iframe>
+
+**Morning walking route:**
+- [Hosier Lane](https://www.google.com/maps/place/Hosier+Lane/) — Street art (arrive ~9 AM)
+- [Melbourne Central](https://www.google.com/maps/place/Melbourne+Central/) — Shopping
+- [Degraves Street](https://www.google.com/maps/place/Degraves+Street/) — Lunch
+
+**To airport:**
+- [Southern Cross Station](https://www.google.com/maps/place/Southern+Cross+Station/) — SkyBus departure
+- [Melbourne Airport T2](https://www.google.com/maps/place/Melbourne+Airport+Terminal+2/) — Scoot check-in
 
 ## Day 10 Plan
 

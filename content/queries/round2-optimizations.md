@@ -108,12 +108,12 @@ Based on ~~NT$4,042–NT$4,941/night, July 2025 rates:
 
 **Book NOW — July school holidays fill up 2-3 weeks ahead.**
 
-Based on ~~NT$4,042–NT$5,615/night for 2BR apartment:
+Based on ~$150–280 AUD/night for 2BR apartment (2026 verified):
 
-- **Airbnb — Rye 2BR beachside apartment** — Search: "Rye 2 bedroom apartment Mornington Peninsula beach" | Target: ~NT$4,042–NT$4,941/night
-- **RACV Cape Schanck Resort** — Full resort with pool, spa, golf. ~~NT$5,615–NT$7,861/night. Worth the premium if you want resort amenities.
-- **Peppers Moonah Links** — Resort near hot springs, ~NT$4,941–NT$6,288/night.
-- **Rye Hotel** — On the main road, 3-star, ~NT$2,919–NT$3,818/night. Basic but convenient.
+- **Airbnb — Rye 2BR beachside apartment** — Search: "Rye 2 bedroom apartment Mornington Peninsula beach" | Target: ~$150–280 AUD/night (~NT$3,366–NT$6,283)
+- **RACV Cape Schanck Resort** — Full resort with pool, spa, golf. ~$250–350 AUD/night (~NT$5,610–NT$7,850). Worth the premium if you want resort amenities.
+- **Peppers Moonah Links** — Resort near hot springs, ~$220–280 AUD/night (~NT$4,935–NT$6,280).
+- **Rye Hotel** — On the main road, 3-star, ~$130–170 AUD/night (~NT$2,915–NT$3,815). Basic but convenient.
 
 **July school holidays note:** Victoria school holidays start July 1. Mornington Peninsula is a huge family destination. Book NOW regardless of which option.
 

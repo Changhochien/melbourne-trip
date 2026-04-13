@@ -7,10 +7,28 @@ tags: [itinerary, day-6, puffing-billy, phillip-island, penguins]
 sources: [raw/articles/puffing-billy-research.md, raw/articles/kkday-tour-research.md]
 ---
 
-# Day 6 — Jul 6 (Sunday): Puffing Billy + Phillip Island
+# Day 6 — Jul 6 (Sunday): Puffing Billy + Penguin Parade
 
-> The longest day. Depart ~7:00 AM, return ~9:30–10:00 PM.  
+> The longest day. Depart ~7:00 AM, return ~9:30–10:00 PM.
 > **Non-negotiable:** FULL warm layers for Penguin Parade — 5-8°C, Southern Ocean wind.
+
+## Map — Puffing Billy + Phillip Island
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.90%2C-38.65%2C145.60%2C-38.25&layer=mapnik&marker=-38.4500%2C145.2300"
+  allowfullscreen>
+</iframe>
+
+**Stops:**
+- [Puffing Billy Railway (Belgrave)](https://www.google.com/maps/place/Puffing+Billy+Railway/) — Dandenong Ranges
+- [Koala Conservation Centre](https://www.google.com/maps/place/Koala+Conservation+Centre/) — Phillip Island
+- [The Nobbies](https://www.google.com/maps/place/The+Nobbies/) — Coastal views, seal colony
+- [Penguin Parade](https://www.google.com/maps/place/Penguin+Parade/) — Summerlands, arrive by 4 PM
 
 ## Booking Links
 

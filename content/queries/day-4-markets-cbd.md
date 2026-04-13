@@ -11,6 +11,26 @@ sources: [raw/articles/wikivoyage-melbourne.md, raw/articles/queen-victoria-mark
 
 > Rain back-up plan: NGV International (free), ACMI (paid). This is a walking-heavy day — comfy shoes required.
 
+## Map — QVM + Melbourne Laneways
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.955%2C-37.821%2C144.972%2C-37.806&layer=mapnik&marker=-37.8135%2C144.9635"
+  allowfullscreen>
+</iframe>
+
+**Walking route:**
+- [Queen Victoria Market](https://www.google.com/maps/place/Queen+Victoria+Market/) — Morning (arrive 8-9 AM)
+- [Flinders Street Station](https://www.google.com/maps/place/Flinders+Street+Station/) — Starting point for laneways walk
+- [Hosier Lane](https://www.google.com/maps/place/Hosier+Lane/) — Street art
+- [Degraves Street](https://www.google.com/maps/place/Degraves+Street/) — Coffee/brunch
+- [Block Arcade](https://www.google.com/maps/place/Block+Arcade/) → [Royal Arcade](https://www.google.com/maps/place/Royal+Arcade/) — Heritage arcades
+- [Federation Square](https://www.google.com/maps/place/Federation+Square/) — Afternoon / NGV
+
 ## Queen Victoria Market (QVM)
 
 **Open:** Tue / Thu / Fri / Sat / **Sun** / Mon (closed Wed)  

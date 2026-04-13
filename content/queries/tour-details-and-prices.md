@@ -69,16 +69,18 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 
 ---
 
-## Peninsula Hot Springs — peninsulahotsprings.com (ACTUAL PRICES)
+## Peninsula Hot Springs — peninsulahotsprings.com (ACTUAL PRICES — VERIFIED APR 2026)
 
-| Option | Price (TWD) | Duration |
-|--------|-------------|----------|
-| **Bath House** (general entry) | ~~NT$1,167/p | 2–3 hours |
-| **Full Day Pass** | ~~NT$1,684/p | 5 hours |
-| **Hilltop Pool** | +~NT$449–NT$673 | add-on to Bath House |
+| Option | Price (AUD) | Price (TWD) | Duration |
+|--------|-------------|-------------|----------|
+| **Revitalise Bath House** (standard entry) | $80 | ~NT$1,795 | 2–3 hours |
+| **Reset Bathing** (twilight, after 6pm) | $125 | ~NT$2,804 | 2–3 hours |
+| **Moonlit Bathing** (Spa Dreaming Centre) | $80 | ~NT$1,795 | ~2 hours |
 
-**Session times:** 9AM, 12:30PM, 4PM, 7:30PM  
-**Book:** peninsulahotsprings.com — sells out weeks ahead  
+> Note: "Full Day Pass" and "Hilltop Pool" no longer appear in current pricing (2026). The main Bath House standard entry is now $80 AUD. Prices confirmed from official booking site.
+
+**Session times:** 9AM, 12:30PM, 4PM, 7:30PM
+**Book:** peninsulahotsprings.com — sells out weeks ahead
 **Book by:** Jun 25
 
 ---
@@ -134,7 +136,7 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 | Penguin Parade (General × 2) | ~NT$1,527 | included in combined |
 | Sovereign Hill (Standard × 2) | ~NT$2,358 | ~~NT$3,369–NT$4,267 |
 | SkyBus return (× 2) | ~NT$1,873 | n/a |
-| Peninsula Hot Springs (Bath House × 2) | ~~NT$2,335 | n/a |
+| Peninsula Hot Springs (Bath House × 2) | ~NT$3,590 | n/a |
 | Healesville Sanctuary (× 2) | ~~NT$1,796 | n/a |
 | **Total** | **~~NT$9,882** | **~~NT$11,230–NT$16,171** |
 

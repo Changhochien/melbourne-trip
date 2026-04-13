@@ -11,6 +11,30 @@ sources: [raw/articles/fitzroy-research.md, raw/articles/st-kilda-research.md, r
 
 > Tram 96 runs from CBD to St Kilda. Tram 11/12 to Fitzroy. Myki covers both. This is a relaxed day — no set schedule, just wander.
 
+## Map — Fitzroy + St Kilda
+
+<iframe
+  width="100%"
+  height="350"
+  style="border:0; border-radius: 8px;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.93%2C-37.87%2C144.99%2C-37.85&layer=mapnik&marker=-37.8620%2C144.9550"
+  allowfullscreen>
+</iframe>
+
+**Getting there:**
+- [Tram 96 route](https://www.google.com/maps/dir/Melbourne+CBD/St+Kilda+VIC/) — Runs from Collins St CBD to St Kilda Pier
+- [Tram 11](https://www.google.com/maps/dir/Melbourne+CBD/Fitzroy+VIC/) — Collins St to Brunswick St, Fitzroy
+
+**Stops:**
+- [Brunswick St, Fitzroy](https://www.google.com/maps/place/Brunswick+Street+Fitzroy/) — Coffee, brunch, shops
+- [Gertrude St, Fitzroy](https://www.google.com/maps/place/Gertrude+Street/) — Boutiques, cafes
+- [Smith St, Fitzroy](https://www.google.com/maps/place/Smith+Street+Fitzroy/) — Lunch, more affordable
+- [St Kilda Pier](https://www.google.com/maps/place/St+Kilda+Pier/) — Views, penguins sometimes
+- [Acland Street, St Kilda](https://www.google.com/maps/place/Acland+Street+St+Kilda/) — Bakeries, dinner
+- [Luna Park St Kilda](https://www.google.com/maps/place/Luna+Park+St+Kilda/) — Iconic entrance (photo stop)
+
 ## Morning: Fitzroy
 
 Melbourne's oldest inner suburb. Alternative culture, street art, op shops, live music.
