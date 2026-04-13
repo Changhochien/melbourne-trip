@@ -1,0 +1,9 @@
+[build]
+  command = "npm install && npm run quartz -- build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-build"
