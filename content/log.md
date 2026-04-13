@@ -119,3 +119,10 @@
 - Force-pushed to GitHub main (source of truth is now ~/Downloads/Melbourne-vacation-7-1-to-7-10)
 - Netlify build triggered via deploy.sh
 - Index verified: 35 pages, all present in index.md, no orphans
+
+## [2026-04-13] update | Map embeds verified working in Quartz build
+- Confirmed: OSM iframe embeds work in local Quartz build (public/ output has iframes)
+- Live site at melbourne-trip-wiki.netlify.app was stale — showed 0 iframes
+- Structure: wiki content now lives in content/ directory (proper Quartz convention)
+- All 10 day itinerary pages have OSM iframe maps + per-stop Google Maps links
+- Triggered Netlify rebuild via deploy.sh hook
