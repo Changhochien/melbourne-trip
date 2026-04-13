@@ -109,3 +109,13 @@
   - queries/day-9-yarra-valley-or-free-day.md — Yarra Valley + rain day options
   - queries/day-10-departure.md — CBD morning + SkyBus to airport
 
+
+## [2026-04-13] update | SCHEMA tag taxonomy + full Quartz 4 site setup
+- Filled in complete tag taxonomy in SCHEMA.md — all 86 tags currently in use are now enumerated
+- Deprecated: "neighborhood" (use specific suburb names), "outer-suburbs" (unused)
+- Added full Quartz 4 build infrastructure to this directory: package.json, quartz.config.ts, quartz/, deploy.sh, netlify.toml, etc.
+- content/ symlink points to . so this directory IS the Quartz content root
+- .gitignore updated: excludes public/, quartz/.quartz-cache/, node_modules/
+- Force-pushed to GitHub main (source of truth is now ~/Downloads/Melbourne-vacation-7-1-to-7-10)
+- Netlify build triggered via deploy.sh
+- Index verified: 35 pages, all present in index.md, no orphans
