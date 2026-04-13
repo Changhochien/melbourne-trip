@@ -40,21 +40,49 @@ entity page. This makes the raw layer visible in Obsidian's graph without creati
 The frontmatter `sources:` field on entity pages remains the canonical citation link.
 
 ## Tag Taxonomy
-[Define 10-20 top-level tags for the domain. Add new tags here BEFORE using them.]
 
-- Place types: attraction, restaurant, cafe, bar, neighborhood, accommodation, transport-hub, market
-- Experience: culture, food, wine, nature, shopping, nightlife, art, sports, outdoors, wildlife
-- Built environment: architecture, landmark
-- Practical: budget, booking-required, free, seasonal, logistics, packing, practical
-- Geography: cbd, inner-suburbs, outer-suburbs, regional-vic, beach, southbank
-- Trip planning: itinerary, packing, flight, visa
-- History: history, gold-rush
-- Tours: tour, self-drive, day-trip
-- Activities: hot-springs, penguins, wine-region, open-air-museum
-- Advice: guide, tips, optimization, pricing, flight-analysis
+### Trip structure (numerical day tags)
+`day-1` through `day-10`, `arrival`, `departure`, `free-day`
+
+### Place types
+`attraction`, `accommodation`, `transport-hub`, `market`, `landmark`
+
+### Geography / zones
+`cbd`, `inner-suburbs`, `regional-vic`, `beach`, `southbank`
+
+### Specific neighborhoods
+`fitzroy`, `st-kilda`, `flinders-street-station`, `fed-square`, `queen-victoria-market`, `yarra-valley`, `mornington-peninsula`, `great-ocean-road`
+
+### Experience / what you'll do
+`culture`, `food`, `wine`, `coffee`, `art`, `nature`, `shopping`, `nightlife`, `outdoor`, `wildlife`, `laneways`, `markets`
+
+### Activities / attractions
+`hot-springs`, `penguins`, `sovereign-hill`, `puffing-billy`, `ballarat`, `phillip-island`, `puffing-billy-phillip-island`, `open-air-museum`, `gold-rush`
+
+### Practical / logistics
+`budget`, `free`, `seasonal`, `logistics`, `practical`, `transport`, `skybus`, `sim-card`, `packing`, `booking`, `self-drive`
+
+### Tour types
+`tour`, `day-trip`, `self-drive`
+
+### Trip planning meta
+`itinerary`, `trip-planning`, `optimization`, `pricing`, `flight-analysis`, `guide`, `tips`, `departure`, `return-to-melbourne`, `arrival`
+
+### Historical
+`history`, `gold-rush`
+
+### Built environment
+`architecture`, `landmark`
+
+### Time / conditions
+`indoors`, `sunset`, `geography`, `nightlife`, `open-air-museum`
 
 Rule: every tag on a page must appear in this taxonomy. If a new tag is needed,
 add it here first, then use it. This prevents tag sprawl.
+
+Note: `accommodation` and `transport` appear in taxonomy above (under place types
+and practical respectively). `neighborhood` is deprecated — use specific suburb
+names instead. `southbank` is a geographic tag, not a neighborhood.
 
 ## Page Thresholds
 - **Create a page** when a place/activity appears in 2+ sources OR is central to one source

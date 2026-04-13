@@ -1,5 +1,16 @@
 .DS_Store
 .obsidian/
- Outputs/
+Outputs/
 _archive/
 *.log
+
+# Quartz build output
+public/
+quartz/.quartz-cache/
+
+# Dependencies
+node_modules/
+
+# OS files
+._*
+Thumbs.db
