@@ -1,0 +1,59 @@
+Category,Item,Unit Cost (AUD),Unit Cost (TWD),Quantity,Total (AUD),Total (TWD),Notes
+FLIGHTS,Taiwan ↔ Melbourne,1300,29200,2,2600,58400,Round trip per person - book separately
+ACCOMMODATION,Melbourne CBD (6 nights),200,4492,6,1200,26952,~$180-220/night mid-range hotel
+ACCOMMODATION,Mornington Peninsula Airbnb (2 nights),220,4941,2,440,9878,~$180-250/night for 2BR apartment Rye
+ACCOMMODATION,Melbourne CBD Night 8,200,4492,1,200,4492,Last night before departure
+ACCOMMODATION,Subtotal Accommodation,,,,"1,840","41,322","Nights 1-6 + Night 7 + Night 8"
+TOURS,Great Ocean Road Day Tour (KKday),95,2134,2,190,4268,KKday/Klook ~$89-109/p adult July
+TOURS,Sovereign Hill Day Tour (KKday),85,1909,2,170,3818,KKday/Klook ~$75-95/p adult July
+TOURS,Puffing Billy + Phillip Island (KKday),135,3032,2,270,6063,KKday/Klook ~$105-145/p combined
+TOURS,Subtotal Tours,,,,"630","14,147","Book 1-2 weeks ahead for July school holidays"
+TRANSPORT - ARRIVAL,Airport SkyBus MEL → CBD,22.60,508,2,45.20,1015,Online booking recommended
+TRANSPORT - DEPARTURE,Airport SkyBus CBD → MEL,22.60,508,2,45.20,1015,Book same as arrival
+TRANSPORT - LOCAL,Myki Card + Top-up,35,786,2,70,1571,Zone 1, 7 days,~$30/p + $6 deposit
+TRANSPORT - LOCAL,Myki for Days 4-5 (CBD trips),5,112,2,10,225,Trams within Free Tram Zone = free
+CAR RENTAL,Economy car Days 7-8,75,1685,2,150,3370,~$70-90/day July with insurance
+CAR RENTAL,Petrol Mornington Peninsula,40,898,1,40,898,Approximate fuel cost
+CAR RENTAL,Subtotal Car Rental,,,,"190","4,268",
+ACTIVITIES - DAY 4,Queen Victoria Market produce,30,674,2,60,1348,Self-cater breakfast/lunch ingredients
+ACTIVITIES - DAY 8,Mornington Hot Springs (Bath House 2-3hr),52,1168,2,104,2336,Book online - sells out fast
+ACTIVITIES - DAY 9,Healesville Sanctuary,40,898,2,80,1796,Book online - not available at door
+ACTIVITIES - DAY 9,Wine tasting cellar doors (3 wineries),20,449,2,40,898,~$10-15/p average across 3
+ACTIVITIES - DAY 9,Yarra Valley fuel,30,674,1,30,674,Driving fuel estimate
+ACTIVITIES - DAY 9,Subtotal Day 9,,,,"150","3,368",
+FOOD TOTAL,Breakfast Days 2-10 (except accommodation),25,562,18,450,10107,~$25/p breakfast average
+FOOD TOTAL,Lunch Days 2-3 (tour days),30,674,4,240,2696,On tour, budget ~$30/p/lunch
+FOOD TOTAL,Lunch Days 4-9 (local),35,786,6,420,4714,~$35/p lunch average
+FOOD TOTAL,Dinner Days 1-9,65,1460,9,1170,26138,~$65/p dinner average (mix of cheap/experience)
+FOOD TOTAL,Dinner Day 10 (final celebration),100,2246,2,200,4492,Upgrade last dinner
+FOOD TOTAL,Laneway coffees + snacks,15,337,10,300,3370,~$15/day for coffees + snacks
+FOOD TOTAL,Subtotal Food,,,,"2,780","62,432","9 dinners + 9 lunches + 9 breakfasts + snacks"
+MISC,Misc contingency (10%),,,,570,12802,10% buffer for unexpected costs
+MISC,Travel insurance (recommended),60,1348,2,120,2695,~$60/p for 10 days
+MISC,Subtotal Misc,,,,"690","15,497",
+GRAND TOTAL,,,,,,"~5,375-5,875","~120,725-131,947","Estimate for 2 people in AUD"
+PER PERSON,,,,,,"~2,688-2,938","~60,362-65,974","Based on 2 people traveling together"
+,,,,,,
+BUDGET BREAKDOWN (AUD),TWD equivalent (at 22.46),% of total,,,
+Accommodation,1840,41322,34%,Main cost after flights
+Tours,630,14147,12%,3 major day tours
+Food,2780,62432,52%,Largest controllable cost
+Transport,310,6962,6%,SkyBus + Myki
+Car Rental,190,4268,4%,Only 2 days needed
+Activities,254,5705,5%,Hot springs + sanctuary + wineries
+Misc,570,12802,,Contingency + insurance
+TOTAL,5374,120725,100%,,
+,,,,,,
+BOOKING DEADLINES,,,,,,
+Item,Book By,Booking URL,Priority
+Great Ocean Road Tour,Jun 24 (1 week before),kkday.com/en/product/129669,CRITICAL
+Sovereign Hill Tour,Jun 24 (1 week before),kkday.com/en/product/10169,CRITICAL
+Puffing Billy + Phillip Island,Jun 24 (1 week before),kkday.com "Puffing Billy Phillip Island",CRITICAL
+Peninsula Hot Springs,Jun 25-26 (book session),peninsulahotsprings.com,CRITICAL
+Healesville Sanctuary,Book anytime,NOW,healesvillesanctuary.org.au,HIGH
+Car Rental (Days 7-8),Book NOW,NOW,"Thrifty/Budget/JUCY online",HIGH
+Mornington Airbnb,Book NOW,NOW,Airbnb.com,CRITICAL
+Melbourne CBD Hotels,Book if not done,NOW,Booking.com,MEDIUM
+,,,,,,
+AUD/TWD EXCHANGE RATE: 22.46 (Numbeo April 2026),,,,,
+Budget source: Numbeo cost of living Melbourne April 2026,,,,
