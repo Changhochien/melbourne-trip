@@ -4,7 +4,7 @@
 > Read this first to find relevant pages for any query.
 > Last updated: 2026-04-13 | Total pages: 35
 
-> **Note:** Day 7 and Day 8 pages repriced with 2026 AUD rates (Apr 13, 2026).
+> **Note:** Day 3–9 pages updated with spreadsheet data (墨爾本2026). Key changes: Day 4 (Convent Bakery, QVM markets), Day 5 (Sunday markets, gas bridge ceremony), Day 6 (LUNA croissant), Day 7 (sleep until noon, hot springs evening), Day 8 (Arthurs Seat, Ashcombe Maze), Day 9 (shopping day + South Melbourne Market). See log.md for full details.
 
 ## Entities
 

@@ -1,135 +1,89 @@
 ---
-title: "Day 9 — Jul 9: Yarra Valley or Free Day"
+title: "Day 9 — Jul 9 (Wednesday): Shopping Day + South Melbourne Market"
 created: 2025-07-09
-updated: 2025-07-09
+updated: 2026-04-13
 type: itinerary-day
-tags: [itinerary, day-9, yarra-valley, self-drive, free-day]
-sources: [raw/articles/day-9-suggestions.md, raw/articles/kkday-tour-research.md]
+tags: [itinerary, day-9, shopping, markets, free-day]
+sources: [raw/articles/wikivoyage-melbourne.md]
 ---
 
-# Day 9 — Jul 9 (Wednesday): Yarra Valley or Melbourne City Free Day
+# Day 9 — Jul 9 (Wednesday): Shopping Day + South Melbourne Market
 
-> Today is flexible. Yarra Valley is the plan — wine country, wildlife, scenic. But if weather is bad, swap to a Melbourne rain day (State Library + NGV + shopping).
+> Last full day in Melbourne. South Melbourne Market in the morning, shopping in the CBD, and a final wander through laneways. No set itinerary — just enjoy.
 
-## Map — Option A: Yarra Valley
+## Morning: South Melbourne Market
 
-<iframe
-  width="100%"
-  height="350"
-  style="border:0; border-radius: 8px;"
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.openstreetmap.org/export/embed.html?bbox=145.10%2C-37.85%2C145.60%2C-37.55&layer=mapnik&marker=-37.7000%2C145.3500"
-  allowfullscreen>
-</iframe>
+**[South Melbourne Market](https://www.google.com/maps/place/South+Melbourne+Market/)** — [Coventry St &, Cecil St, South Melbourne](https://www.google.com/maps/place/South+Melbourne+Market/)
 
-**Stops (Yarra Valley self-drive):**
-- [Healesville Sanctuary](https://www.google.com/maps/place/Healesville+Sanctuary/) — Australian wildlife
-- [Yering Station](https://www.google.com/maps/place/Yering+Station+Winery/) — Historic winery, cellar door
-- [Oakridge Wines](https://www.google.com/maps/place/Oakridge+Wines/) — Award-winning chardonnay
-- [Coldstream Hills](https://www.google.com/maps/place/Coldstream+Hills/) — Good value cellar door
-- [Healesville CBD](https://www.google.com/maps/place/Healesville+VIC/) — Lunch
+**Open:** Wed / Fri / Sat / Sun (closed Mon/Tue)
+**Arrive:** 8–9 AM for best produce and artisan stalls
 
-**Option B: Melbourne Rain Day route:**
-- [State Library Victoria](https://www.google.com/maps/place/State+Library+Victoria/) — Free rooftop, stunning reading room
-- [NGV International](https://www.google.com/maps/place/NGV+International/) — Free general entry
-- [Degraves Street / Fed Square](https://www.google.com/maps/place/Degraves+Street/) — Lunch
-- [DFO South Wharf](https://www.google.com/maps/place/DFO+South+Wharf/) — Outlet shopping
+**What's there:**
+- Fresh produce, deli, seafood, meat
+- Artisan crafts, clothing, homewares
+- Excellent food hall — dim sum, pasta, paella, coffee
+- **Best breakfast:** The market hall opens at 8 AM, the food stalls at ~9 AM
 
-## Option A: Yarra Valley Self-Drive (Plan)
+**Parking:** Free before 9 AM in the surrounding streets (check signs). Alternatively, take tram 96 or 12 from CBD (~10 min).
 
-**Best if weather looks decent.** Self-drive gives you flexibility and costs less for 2 people than a guided tour.
+## Mid-Morning: Shopping in Melbourne CBD
 
-### Details
+| Store | Location | What | Price Range |
+|-------|----------|------|------------|
+| **Myer Centre** | Elizabeth St | Department store, electronics, souvenirs | Mid-range |
+| **Emporium Melbourne** | Lonsdale St | Fashion, bookstores, cinema | Mid to high |
+| **Melbourne Central** | Lonsdale St | Shopping centre, food court | Mid-range |
+| **Collins Street** | CBD | Luxury brands, boutiques | High-end |
+| **Chapel Street** | South Yarra | Designer fashion, homewares | High-end |
 
-| | |
-|---|---|
-| **Distance** | ~60 km from CBD to Healesville |
-| **Drive time** | ~1 hour |
-| **Recommendation** | Self-drive (~~NT$2,133/p vs ~~NT$2,919/p guided for 2) |
+## Afternoon: Final Laneway Wander
 
-### Itinerary
+Melbourne's laneways deserve one last walk. Favorite stops:
 
-| Time | Activity |
-|------|----------|
-| 8:00 AM | Pick up rental car (or use previous day's if kept) |
-| 9:00–11:00 AM | Drive to Healesville |
-| 11:00–1:30 PM | **Healesville Sanctuary** — Australian wildlife, koalas, platypus |
-| 1:30–2:30 PM | Lunch in Healesville (pub or cafe) |
-| 2:30–5:00 PM | 2–3 winery cellar doors (Yering Station, Oakridge, Coldstream Hills) |
-| 5:00–6:00 PM | Drive back to Melbourne |
-| 7:00–9:00 PM | Final dinner (Lygon Street or Southbank) |
+| Laneway / Place | What's There |
+|-----------------|-------------|
+| **Hosier Lane** | Street art, photos |
+| **Degraves Street** | Coffee, last chance for Melbourne espresso |
+| **Centre Place** | Small laneway with cafes and murals |
+| **Flinders Lane** | Boutique clothing, vintage |
 
-### Healesville Sanctuary — Actual Prices (2026)
+## Souvenir Shopping
 
-Scraped from healesvillesanctuary.org.au (via direct curl):
+| Item | Where to Buy | Price |
+|------|-------------|-------|
+| UGG boots | Currency Co (CBD) or UGG Australia | ~$120–$250 AUD |
+| Tim Tams | Coles/Woolworths, DFO | ~$4–$7 AUD |
+| Vegemite | Any supermarket | ~$5 AUD |
+| Australian chocolate | Haigh's (brewery-style, must visit) | ~$15–$30 AUD |
+| Merino wool | Country Road, Merinos | ~$80–$150 AUD |
+| Souvenirs | Myer Centre, DFO,机场 | vary |
 
-| Ticket Type | Adult | Child |
-|-------------|-------|-------|
-| **General Admission** | ~~NT$898 | ~~NT$449 |
-| **Keeper Experiences** | Extra — book separately | |
+**DFO (Direct Factory Outlet):** [DFO South Wharf](https://www.google.com/maps/place/DFO+South+Wharf/) — Outlets for Nike, Adidas, Coach, etc. Tram 96 from CBD. Worth it if you need serious shopping.
 
-**Book:** healesvillesanctuary.org.au  
-**Location:** Healesville, Yarra Valley  
-**Open:** Daily, 9 AM – 5 PM
+## Evening: Final Dinner
 
-### Yarra Valley Wineries
+Last night deserves something memorable:
 
-| Winery | Known For |
-|--------|----------|
-| **Yering Station** | Historic estate, excellent all-rounder |
-| **Oakridge** | Award-winning chardonnay, fine dining |
-| **Coldstream Hills** | Reliable, good value cellar door |
-| **Domaine Chandon** | Sparkling wine, French champagne method |
-| **Fergusson** | Boutique, great pinot noir |
+| Restaurant | Cuisine | Area | Notes |
+|-----------|---------|------|-------|
+| **Matisse** | Modern Australian | Fitzroy | Small plates, excellent wine list |
+| **Attica** | Fine dining | Fitzroy | Award-winning, book months ahead |
+| **Flower Drum** | Cantonese | CBD | Melbourne institution, legendary |
+| **Lygon Street** | Italian | Carlton | Classic Melbourne |
 
-**Tasting fees:** ~~NT$224–NT$336/p at most cellar doors (often waived with purchase)
+## Checklist — Before You Leave Melbourne
 
-### Cost (Self-Drive, 2 people)
-
-| Item | Cost (TWD) |
-|------|-----------|
-| Car (shared from Day 7-8 rental) | ~~NT$898 (your portion) |
-| Healesville Sanctuary (×2) | ~~NT$1,796 |
-| Lunch | ~~NT$898–NT$1,123 |
-| Winery tastings (3 × ~NT$224 × 2) | ~~NT$1,347 |
-| Dinner | ~~NT$1,123–NT$1,572 |
-| **Total for 2** | **~~NT$6,064–NT$7,861** |
-
----
-
-## Option B: Melbourne Rain Day (Weather Swap)
-
-**Best if rain is forecast.** No point driving to Yarra Ranges in wet weather.
-
-| Time | Activity |
-|------|----------|
-| Morning | **State Library Victoria** — stunning modernist Rooftop (free), great reading room, free WiFi |
-| Midday | **NGV International** — free entry, world-class art |
-| Lunch | Degraves Street or Fed Square |
-| Afternoon | **DFO South Wharf** — shopping (Nike, UGG, Adidas outlet prices) |
-| Evening | Final dinner |
-
-**Cost:** Essentially free (just food + transport)
-
----
-
-## Decision Framework
-
-| Condition | Action |
-|-----------|--------|
-| Good weather + want wine | Do Yarra Valley |
-| Rain forecast | Do Melbourne rain day |
-| Tired from Days 7-8 | Do Melbourne rain day |
-| Want maximum variety | Do Yarra Valley (different from coast + gold rush) |
-
----
+- [ ] All bags packed and ready for tomorrow's flight
+- [ ] Myki card returned or kept for future use
+- [ ] Accommodation checkout tomorrow — timing?
+- [ ] Download boarding pass to phone
+- [ ] Charge all electronics
 
 ## Related
 
-- [[yarra-valley]] — Full wiki page
-- [[day-10-departure]] — Tomorrow: last day, departure
-- [[day-8-peninsula-hot-springs]] — Yesterday's hot springs day
+- [[day-8-peninsula-hot-springs]] — Yesterday: Mornington Peninsula
+- [[day-10-departure]] — Tomorrow: departure day
+- [[melbourne-cbd]] — CBD reference
+- [[st-kilda]] — St Kilda, tram 96 route
 ## Sources
-- raw/articles/day-9-suggestions
-- raw/articles/kkday-tour-research
+- raw/articles/wikivoyage-melbourne

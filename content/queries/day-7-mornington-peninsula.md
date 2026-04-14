@@ -1,15 +1,28 @@
 ---
-title: "Day 7 — Jul 7: Self-Drive to Mornington Peninsula"
+title: "Day 7 — Jul 7 (Monday): Self-Drive + Peninsula Hot Springs"
 created: 2026-04-13
 updated: 2026-04-13
 type: itinerary-day
-tags: [itinerary, day-7, mornington-peninsula, self-drive, rye]
+tags: [itinerary, day-7, mornington-peninsula, self-drive, hot-springs]
 sources: [raw/articles/wikivoyage-mornington-peninsula.md, raw/articles/mornington-peninsula-accommodation.md, raw/articles/hot-springs-peninsula-research.md]
 ---
 
-# Day 7 — Jul 7 (Monday): Self-Drive to Mornington Peninsula
+# Day 7 — Jul 7 (Monday): Self-Drive + Peninsula Hot Springs
 
-> **Book car rental NOW.** July school holidays fill up. Pick up in Melbourne CBD morning of Day 7.
+> Sleep until noon. Pick up rental car in the afternoon, scenic drive, evening at Peninsula Hot Springs. Relaxed day — no rushing.
+
+## Car Rental — BOOK IN ADVANCE
+
+> July school holidays fill up fast. Pick up in Melbourne CBD afternoon of Day 7.
+
+| Company | Price/Day (AUD) | Price/Day (TWD) | Notes |
+|---------|-----------------|-----------------|-------|
+| Economy (Kayak aggregate) | $35–$55 | ~NT$785–NT$1,233 | Verified Apr 2026 |
+| Thrifty/Budget | $55–$80 | ~NT$1,233–NT$1,794 | More reliable |
+| JUCY/Smile | $40–$60 | ~NT$897–NT$1,345 | Budget, older cars |
+
+**Insurance:** Full coverage recommended ~NT$449–NT$673/day on top.
+**Return:** Day 8 afternoon (when you drive back to Melbourne)
 
 ## Map — Melbourne to Mornington Peninsula
 
@@ -23,90 +36,60 @@ sources: [raw/articles/wikivoyage-mornington-peninsula.md, raw/articles/morningt
   allowfullscreen>
 </iframe>
 
-**Stops (self-drive route):**
-- [Cape Schanck](https://www.google.com/maps/place/Cape+Schanck+VIC/) — Lighthouse walk
-- [Arthurs Seat](https://www.google.com/maps/place/Arthurs+Seat+VIC/) — Panoramic views of Port Phillip Bay
-- [Red Hill](https://www.google.com/maps/place/Red+Hill+VIC/) — Wine region, cellar doors
-- [Mount Martha](https://www.google.com/maps/place/Mount+Martha+VIC/) — Hot springs location
-- [Rye](https://www.google.com/maps/place/Rye+VIC/) — Accommodation base
+## Afternoon Drive Route
 
-## Car Rental — BOOK NOW
+After noon: pick up car, scenic drive down to peninsula.
 
-| Company | Price/Day (AUD) | Price/Day (TWD) | Notes |
-|---------|-----------------|-----------------|-------|
-| Economy (Kayak aggregate) | $35–$55 | ~NT$785–NT$1,233 | Verified Apr 2026 |
-| Thrifty/Budget | $55–$80 | ~NT$1,233–NT$1,794 | More reliable |
-| JUCY/Smile | $40–$60 | ~NT$897–NT$1,345 | Budget, older cars |
+| Stop | What's There | Notes |
+|------|-------------|-------|
+| **Arthurs Seat Eagle** | [Base Station](https://www.google.com/maps/place/Arthurs+Seat+Eagle+Base+Station/), Murrays Lookout | Panoramic views of Port Phillip Bay |
+| **Cape Schanck** | Lighthouse walk, rugged coastal scenery | Rugged cliff-top walk |
+| **Mount Martha** | Beach walk, scenic coast | White sand, calm water in summer |
 
-**Insurance:** Full coverage recommended ~NT$449–NT$673/day on top.
+**Route:** CBD → M1 south → Arthurs Seat (~1hr) → Cape Schanck → Mount Martha → Rye (accommodation)
 
-> Note: Kayak shows economy cars from $24/day (premium/no-frills) to $73/day (standard). July school holidays push peak-season rates higher. Book early.
+## Evening: Peninsula Hot Springs
 
-**Pick up:** Day 7 morning in Melbourne CBD
-**Return:** Day 8 afternoon (when you drive back to Melbourne)
+**[Peninsula Hot Springs](https://www.google.com/maps/place/Peninsula+Hot+Springs/)** — [77 Express Lane, Fingal VIC 3939](https://www.google.com/maps/place/Peninsula+Hot+Springs/)
 
-## Drive to [[mornington-peninsula]] (Rye)
+**Hours:** 07:00–23:00 (last entry 21:30)
+**Entry:** Bath House (self-guided) from ~$80 AUD/person
 
-- **Distance:** ~90 km from Melbourne CBD to Rye
-- **Time:** ~1 hour via M1 (Monash Freeway) + M11 (Cape Schanck Rd)
-- **Route:** CBD → M1 south → M11 → Rye
+Arriving in the evening (around 18:00–19:00) means you can do a twilight/evening session — fewer people, warmer thermal baths under the night sky.
 
-## Today's Itinerary — Flexible
+**What to bring:**
+- Swimsuit
+- Towel (or rent one there)
+- **Robe and flip-flops** — rent if you don't bring (expensive to rent on-site)
 
-No set agenda. The peninsula is about scenic drives, wine, and coastal walks.
+> Note: Spa robes are mandatory for entry. If you're not staying at the resort, bring your own or rent in advance — on-site rental is limited and overpriced.
 
-### Morning
+## Accommodation — Stay on Peninsula Tonight
 
-- Pick up car, stop for coffee (Yarra Valley on the way out is optional detour)
-- Drive down through Frankston, along the coast road
-- Stop at **Cape Schanck** — Lighthouse walk, rugged coastal scenery
-- Or **Arthurs Seat** — Drive to the top, panoramic views of Port Phillip Bay
+Booked separately. Options:
 
-### Lunch
+| Property | Type | Price/Night (AUD) | Notes |
+|----------|------|-------------------|-------|
+| **Rye Airbnb** | 2BR apartment | $150–$280 | Beachside, self-catering |
+| **RACV Cape Schanck Resort** | Resort | $250–$350 | Pool, spa, on-site dining |
+| **Rye Hotel** | Hotel | $130–$170 | Basic, convenient |
 
-- **Red Hill** — Winery cellar doors, cellar door lunch
-- **Rosebud** — Beachside fish and chips, casual
-- **Sorrento** — Upmarket seaside, Italian restaurants
-
-### Afternoon
-
-- Wine tasting in **Red Hill** or **Main Ridge**
-- Beach walk at **Mount Martha** or **Sorrento**
-- Explore **Point Nepean National Park** (former quarantine station, great walks)
-
-### Check In — Accommodation
-
-**Book your Mornington Peninsula accommodation NOW if not already booked.** July school holidays = booked solid.
-
-Options (2026 verified rates):
-- **Rye Airbnb** — 2BR beachside apartment, ~$150–280 AUD/night (~NT$3,365–NT$6,280)
-- **RACV Cape Schanck Resort** — Full resort, pool + spa, ~$250–350 AUD/night (~NT$5,610–NT$7,850)
-- **Peppers Moonah Links** — Resort near hot springs, ~$220–280 AUD/night (~NT$4,935–NT$6,280)
-- **Rye Hotel** — Basic but convenient, ~$130–170 AUD/night (~NT$2,915–NT$3,815)
-
-## Evening
-
-- Quiet dinner at your accommodation or local restaurant
-- Beach walk at sunset if weather permits
-- Early night — Day 8 is Hot Springs day, need energy
+> July school holidays = booked solid. Book NOW if not already done.
 
 ## Budget
 
 | Item | Cost (AUD) | Cost (TWD) |
-|------|-------------|------------|
-| Car rental (2 days, economy incl. insurance) | $110–$200 | ~NT$2,468–NT$4,488 |
+|------|------------|------------|
+| Car rental (2 days, economy + insurance) | $110–$200 | ~NT$2,468–NT$4,488 |
 | Petrol (Melbourne CBD to Rye + peninsula) | $35–$55 | ~NT$785–NT$1,234 |
-| Lunch | $40–$60 | ~NT$898–NT$1,346 |
-| Wine tastings (3 wineries × ~NT$224/p) | $30 | ~NT$673 |
+| Hot Springs (Bath House × 2) | ~$160 | ~NT$3,590 |
 | Accommodation (Rye, 1 night) | $150–$280 | ~NT$3,366–NT$6,283 |
-| **Total for Day 7** | | **~NT$8,190–NT$14,024** |
-
-> Budget updated with 2026 rates (AUD/TWD = 22.44, verified Apr 13, 2026).
+| **Total Day 7** | | **~NT$7,000–NT$15,595** |
 
 ## Related
 
 - [[mornington-peninsula]] — Full wiki page
-- [[day-8-peninsula-hot-springs]] — Tomorrow: hot springs + return to Melbourne
+- [[day-8-peninsula-hot-springs]] — Day 8: Arthurs Seat cable car, Ashcombe Maze, return to Melbourne
 - [[day-6-puffing-billy-phillip-island]] — Yesterday's big tour day
 ## Sources
 - raw/articles/wikivoyage-mornington-peninsula

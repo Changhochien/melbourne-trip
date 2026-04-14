@@ -1,15 +1,17 @@
 ---
-title: "Day 8 — Jul 8: Hot Springs + Return to Melbourne"
+title: "Day 8 — Jul 8 (Tuesday): Arthurs Seat + Ashcombe Maze + Return to Melbourne"
 created: 2026-04-13
 updated: 2026-04-13
 type: itinerary-day
-tags: [itinerary, day-8, hot-springs, mornington-peninsula, return-to-melbourne]
-sources: [raw/articles/hot-springs-peninsula-research.md]
+tags: [itinerary, day-8, mornington-peninsula, self-drive, outdoor, hot-springs]
+sources: [raw/articles/wikivoyage-mornington-peninsula.md, raw/articles/hot-springs-peninsula-research.md]
 ---
 
-# Day 8 — Jul 8 (Tuesday): Peninsula Hot Springs + Return to Melbourne
+# Day 8 — Jul 8 (Tuesday): Arthurs Seat + Ashcombe Maze + Return to Melbourne
 
-## Map — Hot Springs + Peninsula
+> Scenic drive around the peninsula in the morning/afternoon, then drive back to Melbourne. Final full day in Melbourne — make it count.
+
+## Map — Mornington Peninsula
 
 <iframe
   width="100%"
@@ -17,97 +19,90 @@ sources: [raw/articles/hot-springs-peninsula-research.md]
   style="border:0; border-radius: 8px;"
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.openstreetmap.org/export/embed.html?bbox=144.80%2C-38.40%2C145.05%2C-38.20&layer=mapnik&marker=-38.2900%2C144.9200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=144.75%2C-38.45%2C145.05%2C-38.20&layer=mapnik&marker=-38.2900%2C144.9200"
   allowfullscreen>
 </iframe>
 
-**Stops:**
-- [Peninsula Hot Springs](https://www.google.com/maps/place/Peninsula+Hot+Springs/) — Mount Martha, Bath House
-- [Point Nepean National Park](https://www.google.com/maps/place/Point+Nepean+National+Park/) — Former military fortifications, coastal walks
-- [Rosebud](https://www.google.com/maps/place/Rosebud+VIC/) — Lunch / beach
-- [Sorrento](https://www.google.com/maps/place/Sorrento+VIC/) — Upmarket seaside town
-- Return to [Melbourne CBD](https://www.google.com/maps/dir/Peninsula+Hot+Springs/Melbourne+CBD/)
+## Morning: Arthurs Seat Eagle Cable Car
 
-## Mornington Peninsula Hot Springs
+**[Arthurs Seat Eagle — Base Station](https://www.google.com/maps/place/Arthurs+Seat+Eagle+Base+Station/)** — The chairlift/cable car takes you to the summit of Arthurs Seat, with panoramic views of Port Phillip Bay and the Melbourne skyline.
 
-**Website:** peninsulahotsprings.com
-**Location:** Mount Martha — ~20 min / 18 km from Rye
-**Book:** Online — sells out weeks ahead
+**Hours:** 10:00 AM – 4:00 PM (weather permitting, book ahead)
+**Getting there:** Drive to the base station, park in the free car park
+**[Book online](https://arthursseateagle.com.au/):** Recommended in school holidays
 
-### Actual Ticket Prices (2026 — VERIFIED from official booking site)
+At the summit: walking trails, lookouts, cafe. The views on a clear July day are excellent.
 
-| Option | Price (AUD) | Price (TWD) | Duration |
-|--------|-------------|-------------|----------|
-| **Revitalise Bath House** (standard entry) | $80 | ~NT$1,795 | 2–3 hours |
-| **Reset Bathing** (twilight, after 6pm) | $125 | ~NT$2,804 | 2–3 hours |
-| **Moonlit Bathing** (Spa Dreaming Centre) | $80 | ~NT$1,795 | ~2 hours |
+## Mid-Morning: Murrays Lookout
 
-> Note: "Full Day Pass" and "Hilltop Pool" no longer appear in current 2026 pricing. Standard Bath House entry is now $80 AUD.
+**[Murrays Lookout](https://www.google.com/maps/place/Murrays+Lookout/)** — Drive a few minutes from Arthurs Seat. Stop for coastal views of Port Phillip Bay. On a clear day you can see Melbourne CBD.
 
-### Session Times
+## Lunch: Local Peninsula
 
-| Session | Time |
-|---------|------|
-| Morning | 9:00 AM – 12:00 PM |
-| Afternoon | 12:30 PM – 3:30 PM |
-| Late Afternoon | 4:00 PM – 7:00 PM |
-| Evening | 7:30 PM – 10:00 PM |
+| Option | Style | Notes |
+|--------|-------|-------|
+| **Red Hill** | Winery cellar doors | Lunch with a view |
+| **Sorrento** | Italian, seafood | Upmarket seaside |
+| **Rosebud** | Fish and chips | Casual beachside |
+| **Mount Martha** | Beach cafe | Scenic, relaxed |
 
-**Book by:** Jun 25 at the latest (sells out, especially evening sessions in July)
+## Afternoon: Ashcombe Maze & Lavender Gardens
 
-### What to Expect
+**[Ashcombe Maze & Lavender Gardens](https://www.google.com/maps/place/Ashcombe+Maze+and+Lavender+Gardens/)** — [305 Shoreham Rd, Red Hill South](https://www.google.com/maps/place/Ashcombe+Maze+and+Lavender+Gardens/). Open hours vary seasonally — check before visiting.
 
-- Geothermal mineral pools at a private mountain
-- Range from 38°C to 42°C
-- Bath House = general access to all pools and hammam
-- Hilltop Pool = private deck overlooking the peninsula, more exclusive
-- Cafe on site, bring your own towel and swimmers
+**What's there:**
+- **Maze** — Classic hedge maze, one of Australia's oldest
+- **Lavender Gardens** — Purple in summer (Dec–Feb), peaceful year-round
+- **Nursery** — Buy lavender plants and local crafts
+- **Cafe** — Light lunches, lavender scones and tea
 
-## Today's Schedule
+> Note: July is winter in Victoria — lavender will be dormant/trimmed back, but the maze and gardens are still worth visiting. Bring warm layers.
 
-| Time | Activity |
-|------|----------|
-| 8:00 AM | Breakfast at accommodation |
-| 9:00 AM | Hot Springs (Morning session — arrive 8:45 AM) |
-| 12:00–1:00 PM | Lunch — Rosebud or Sorrento fish and chips |
-| 1:00–3:00 PM | Wine tasting OR Point Nepean walk OR beach |
-| 3:00–4:00 PM | Drive back to Melbourne CBD |
-| ~5:00 PM | Return car, check in to Melbourne CBD |
-| Evening | Final night in Melbourne — dinner in CBD |
+## Cape Schanck Lighthouse (Optional)
 
-## Return to Melbourne
+**[Cape Schanck Lighthouse](https://www.google.com/maps/place/Cape+Schanck+Lighthouse/)** —[Bunurong Tk, Cape Schanck](https://www.google.com/maps/place/Cape+Schanck+Lighthouse/). Coastal lighthouse on the western tip of the peninsula. Rugged clifftop walk, excellent for photography.
 
-- **Drive:** ~1 hour from Rye to Melbourne CBD
-- **Route:** M11 north → M1 (Monash Freeway) → Melbourne CBD
-- Return car at CBD location or near your hotel
-- Check in to Night 8 hotel (see recommendations in [[round2-optimizations]])
+**Walk:** The "Lighthouse Loop" is ~1.5 km return, takes ~45 min.
+
+If you're short on time, skip this — Arthurs Seat and Ashcombe are higher priority.
+
+## Drive Back to Melbourne
+
+| Route | Distance | Time |
+|-------|----------|------|
+| Rye → Melbourne CBD | ~90 km | ~1 hr 10 min |
+
+**Route:** M11 north → M1 (Monash Freeway) → Melbourne CBD
 
 ## Evening — Final Night in Melbourne
 
-Options:
-- **Degraves Street laneway** — Good restaurants, walk through Fed Square
-- **Lygon Street (Carlton)** — Italian food, traditional Melbourne institution
-- **Southbank** — Waterfront dining, city lights views
+Options for a memorable last dinner:
+
+| Area | Restaurant | Cuisine | Notes |
+|------|-----------|---------|-------|
+| **Lygon Street (Carlton)** | e.g., Tiamo | Italian | Traditional Melbourne institution |
+| **Southbank** | Riverside dining | Modern Australian | City lights views |
+| **Degraves Street** | Laneway restaurants | Varied | Walk through Fed Square |
+| **Fitzroy** | e.g., Vegetarian group | Modern Australian | Hip neighbourhood |
 
 ## Budget
 
 | Item | Cost (AUD) | Cost (TWD) |
-|------|-------------|------------|
-| Hot Springs (Bath House × 2) | $160 | ~NT$3,590 |
-| Lunch | $30–$50 | ~NT$673–NT$1,122 |
-| Wine tasting (optional) | $20–$30 | ~NT$449–NT$673 |
-| Petrol | $15–$20 | ~NT$337–NT$449 |
+|------|------------|------------|
+| Arthurs Seat Eagle (×2) | ~$60 | ~NT$1,346 |
+| Ashcombe Maze (×2) | ~$40 | ~NT$898 |
+| Lunch | $40–$60 | ~NT$898–NT$1,346 |
+| Petrol (return to Melbourne) | ~$25 | ~NT$561 |
 | Accommodation (Night 8, Melbourne CBD) | $170–$210 | ~NT$3,815–NT$4,712 |
 | Dinner | $50–$80 | ~NT$1,122–NT$1,795 |
-| **Total for Day 8** | | **~NT$6,986–NT$12,341** |
-
-> Budget updated with 2026 rates (AUD/TWD = 22.44, verified Apr 13, 2026).
+| **Total Day 8** | | **~NT$8,640–NT$10,658** |
 
 ## Related
 
-- [[mornington-peninsula]] — Full wiki page (Hot Springs section)
-- [[day-7-mornington-peninsula]] — Yesterday: arrival, scenic drive
-- [[day-9-yarra-valley-or-free-day]] — Tomorrow: Day 9 choice (Yarra Valley or free day)
-- [[day-10-departure]] — Day 10: departure, airport, flights
+- [[mornington-peninsula]] — Full wiki page
+- [[day-7-mornington-peninsula]] — Yesterday: sleep until noon, afternoon scenic drive, evening hot springs
+- [[day-9-yarra-valley-or-free-day]] — Tomorrow: Shopping Day + South Melbourne Market
+- [[day-10-departure]] — Day 10: departure, flights home
 ## Sources
+- raw/articles/wikivoyage-mornington-peninsula
 - raw/articles/hot-springs-peninsula-research

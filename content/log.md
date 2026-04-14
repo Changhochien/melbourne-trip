@@ -126,3 +126,17 @@
 - Structure: wiki content now lives in content/ directory (proper Quartz convention)
 - All 10 day itinerary pages have OSM iframe maps + per-stop Google Maps links
 - Triggered Netlify rebuild via deploy.sh hook
+
+## [2026-04-13] update | Spreadsheet sync — all day pages updated from Google Sheets
+- Read Google Sheets document "墨爾本2026" via Sheets API (OAuth2 authenticated)
+- Audited all 10 day itinerary pages against spreadsheet "行程" sheet
+- Key changes made:
+  - day-4-markets-cbd.md: Added Convent Bakery breakfast, Market Lane Coffee, State Library, Melbourne Central; removed NGV (moved to day-5); fixed QVM schedule (closed Mon/Wed); removed Hardware Lane (omitted)
+  - day-5-fitzroy-st-kilda.md: Added Sunday Markets (Southgate, Rose Street, Lost and Found); added Crown Melbourne + Gas Bridge fire ceremony (~18:00); added Market Lane Coffee; added National Gallery of Victoria reference; fixed day from "Saturday" to "Sunday"
+  - day-6-puffing-billy-phillip-island.md: Added LUNA Croissanterie stop before departure (6:30–7:00 AM queue)
+  - day-7-mornington-peninsula.md: Complete rewrite — reflects "sleep until noon", afternoon car pickup, scenic drive, evening hot springs (Peninsula Hot Springs 07:00–23:00); updated title from "Self-Drive" to "Self-Drive + Peninsula Hot Springs"; removed car rental urgency language (already booked by now)
+  - day-8-peninsula-hot-springs.md: Complete rewrite — now Arthurs Seat Eagle cable car, Murrays Lookout, Ashcombe Maze & Lavender Gardens, Cape Schanck Lighthouse; hot springs moved to day-7 evening; title changed to reflect new content
+  - day-9-yarra-valley-or-free-day.md: Complete rewrite — changed from "Yarra Valley or Free Day" to "Shopping Day + South Melbourne Market"; added DFO South Wharf, Myer Centre, Emporium, shopping checklist, souvenir guide
+  - day-3-sovereign-hill.md: Added self-drive via V/Line train (Southern Cross → Ballarat, Bus 9/10/21); added Ballarat Wildlife Park optional add-on (koalas, kangaroos); documented paper ticket = free Ballarat bus transit
+- External links verified (KKday, penguins.org.au, peninsulahotsprings.com, sovereignhill.com.au, skybus.com.au)
+- index.md note added: "Day 7 and Day 8 pages updated with Apr 2026 repricing and itinerary changes from spreadsheet"

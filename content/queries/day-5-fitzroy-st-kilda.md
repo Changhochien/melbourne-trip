@@ -1,15 +1,15 @@
 ---
-title: "Day 5 — Jul 5: Fitzroy + St Kilda"
+title: "Day 5 — Jul 5 (Sunday): Fitzroy + St Kilda + Sunday Markets"
 created: 2025-07-05
-updated: 2025-07-05
+updated: 2026-04-13
 type: itinerary-day
 tags: [itinerary, day-5, fitzroy, st-kilda, coffee, markets]
 sources: [raw/articles/fitzroy-research.md, raw/articles/st-kilda-research.md, raw/articles/melbourne-coffee-culture-research.md]
 ---
 
-# Day 5 — Jul 5 (Saturday): Fitzroy + St Kilda
+# Day 5 — Jul 5 (Sunday): Fitzroy + St Kilda + Sunday Markets
 
-> Tram 96 runs from CBD to St Kilda. Tram 11/12 to Fitzroy. Myki covers both. This is a relaxed day — no set schedule, just wander.
+> Sunday = market day. Southgate Sunday Market is on, plus Rose Street Artists' Market and Lost and Found Market. Tram 96 to St Kilda. Evening: Crown Melbourne + gas bridge fire ceremony (~18:00).
 
 ## Map — Fitzroy + St Kilda
 
@@ -88,6 +88,22 @@ Take tram 96 from Fitzroy (or from CBD). Best in afternoon/evening.
 
 July sunset ~5:15 PM. Head to the pier to watch it.
 
+## Evening: Crown Melbourne + Gas Bridge Fire Ceremony
+
+**[Crown Melbourne](https://www.google.com/maps/place/Crown+Melbourne/)** — Casino complex on Southbank. Walk along the Yarra River promenade to the [Gas Bridge](https://www.google.com/maps/place/Gas+Brigade/@-37.8245,144.9518,17z/) (flambeaux torches). The fire ceremony is at **~18:00** — the gas torches are lit at the bridge. Free to watch.
+
+**Getting there:** Tram 96 or walk south from Flinders St Station along the river.
+
+## Sunday Markets Today
+
+| Market | Location | Hours | Notes |
+|--------|----------|-------|-------|
+| **Southgate Sunday Market** | Southbank, near Crown | ~10 AM–4 PM | Arts, crafts, jewelry |
+| **Rose Street Artists' Market** | Fitzroy | ~10 AM–16:00 | Local artists, handmade |
+| **Lost and Found Market** | Fitzroy | ~10 AM–16:00 | Vintage, antiques, buskers |
+
+Arrive early for best selection. All three are within walking distance of each other — Gertrude St → Brunswick St area.
+
 ## Dinner Options
 
 | Area | Cuisine | Price |
@@ -110,7 +126,7 @@ July sunset ~5:15 PM. Head to the pier to watch it.
 
 - Myki covers all trams and buses
 - **Tram 96** — CBD (Collins St) to St Kilda direct
-- **Tram 11** — CBD to Fitzroy ( Brunswick St)
+- **Tram 11** — CBD to Fitzroy (Brunswick St)
 - Free Tram Zone covers most of this route within CBD
 
 ## Related

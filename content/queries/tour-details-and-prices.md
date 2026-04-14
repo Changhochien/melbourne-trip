@@ -1,7 +1,7 @@
 ---
 title: Melbourne Tour Details & Actual Prices
 created: 2025-04-13
-updated: 2025-04-13
+updated: 2026-04-13
 type: query
 tags: [itinerary, tour, pricing, logistics]
 sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-research.md, raw/articles/puffing-billy-research.md]
@@ -10,7 +10,62 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 # Melbourne Tour Details & Actual Prices
 
 > **Actual prices scraped April 2026** — verified from official attraction websites  
-> All prices in New Taiwan Dollars (TWD). Conversion: 1 AUD ≈ 22.46 TWD (April 2026).
+> All prices in New Taiwan Dollars (TWD). Conversion: 1 AUD ≈ 22.44 TWD (April 2026).
+
+---
+
+## Great Ocean Road Day Tour — KKday (TIERED PRICING FROM SPREADSHEET)
+
+Spreadsheet shows per-person pricing tiers (original / special):
+
+| Group Size | Original (TWD) | Special (TWD) | Notes |
+|-----------|---------------|---------------|-------|
+| **50 people** | NT$1,390 | NT$1,098 | Best value — large group |
+| **23 people** | NT$2,219 | NT$1,771 | Mid-size |
+| **13 people** | NT$2,860 | NT$2,286 | Small group |
+| **Lazy patient** (懶癌患者) | NT$1,821 | — | Premium small-group |
+| **Panoramic** (全景一日遊) | NT$2,219 | — | Full experience |
+
+| | |
+|---|---|
+| **KKday** | kkday.com/en/product/129669 |
+| **Duration** | ~14 hours (7:30 AM – 9:30 PM) |
+| **Stops** | Lorne, Apollo Bay, Twelve Apostles, Loch Ard Gorge |
+| **Book by** | Jun 24 |
+
+**Recommendation:** 50-person tier is best value. The 13-person small group is worth the premium if you want more guide attention.
+
+---
+
+## Puffing Billy + Phillip Island — KKday (FROM SPREADSHEET)
+
+| Tour Package | Original (TWD) | Special (TWD) | Notes |
+|-------------|---------------|---------------|-------|
+| **彩色小屋+火車+企鵝** (Brighton Boxes + Train + Penguins) | NT$6,477 | NT$5,356 | Most complete combo |
+| **火車+企鵝** (Train + Penguins) | NT$4,146 | — | Core combo |
+| **彩色小屋+月光zoo+企鵝** (Brighton Boxes + Moonlight Zoo + Penguins) | NT$3,922 | — | Budget combo |
+
+| | |
+|---|---|
+| **Klook** | klook.com/en-AU/activity/2599 |
+| **Duration** | ~14-15 hours (7:00 AM – 10:00 PM) |
+| **Stops** | Puffing Billy Railway, Koala Centre, The Nobbies, Penguin Parade |
+| **Book by** | Jun 24 |
+
+**Recommendation:** 彩色小屋+火車+企鵝 is the most complete — includes Brighton beach boxes, the historic train, and penguin parade. Worth the premium over 火車+企鵝.
+
+---
+
+## Sovereign Hill Day Tour — KKday
+
+| | |
+|---|---|
+| **KKday** | kkday.com/en/product/10169 |
+| **Spreadsheet price** | NT$2,667 original |
+| **Duration** | ~10 hours (8:00 AM – 6:00 PM) |
+| **Book by** | Jun 24 |
+
+**DIY option:** ~NT$1,179/person at sovereignhill.com.au (no transport). DIY saves money with a car.
 
 ---
 
@@ -25,8 +80,6 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 | **Guided Tour (Twilight)** | ~NT$1,998–NT$2,672 | ~NT$999–~NT$1,336 | Enhanced experience |
 | **Guided Tour (All Stars)** | ~NT$2,897–NT$4,469 | ~NT$1,448–~NT$2,234 | Luxury, all inclusive |
 
-**Recommendation:** Penguins Plus (+~NT$336 vs General) is worth it for elevated platform. Don't feel pressured to buy Underground unless you want the premium experience.
-
 **Book:** bookings.penguins.org.au  
 **Location:** 1019 Ventnor Rd, Summerlands VIC 3922  
 **Arrival:** 1 hour before penguin arrival (~4:00-4:30 PM in July)  
@@ -34,7 +87,21 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 
 ---
 
-## Sovereign Hill — sovereignhill.com.au (ACTUAL PRICES)
+## Peninsula Hot Springs — peninsulahotsprings.com (VERIFIED APR 2026)
+
+| Option | Price (AUD) | Price (TWD) | Duration |
+|--------|-------------|-------------|----------|
+| **Revitalise Bath House** (standard entry) | $80 | ~NT$1,795 | 2–3 hours |
+| **Reset Bathing** (twilight, after 6pm) | $125 | ~NT$2,804 | 2–3 hours |
+| **Moonlit Bathing** (Spa Dreaming Centre) | $80 | ~NT$1,795 | ~2 hours |
+
+> Note: "Full Day Pass" and "Hilltop Pool" no longer in 2026 pricing. Standard Bath House entry is $80 AUD. Hours: 07:00–23:00.
+
+**Book:** peninsulahotsprings.com — sells out weeks ahead
+
+---
+
+## Sovereign Hill — sovereignhill.com.au (DIRECT BOOKING)
 
 | Ticket Type | Adult | Child (4-15) | Notes |
 |-------------|-------|-------------|-------|
@@ -45,23 +112,17 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 
 **Book:** shtickets.sovereignhill.com.au  
 **Location:** Ballarat, 1hr from Melbourne  
-**Hours:** Tue–Sun 10am–5pm, Mondays by booking only
-
-**KKday/Klook price:** ~~NT$1,684–NT$2,133 via tour agency (transport + guide included)  
-**DIY price:** ~~NT$1,179 /person at the gate (no transport)
-
-**Recommendation:** DIY if you have a car. KKday/Klook if you don't want to self-drive to Ballarat.
+**Hours:** Tue–Sun 10am–5pm, closed Monday
 
 ---
 
-## SkyBus Melbourne City Express — skybus.com.au (ACTUAL PRICES)
+## SkyBus Melbourne City Express — skybus.com.au
 
 | Ticket Type | Price (TWD) | Notes |
 |-------------|-------------|-------|
 | **Single** | ~NT$559 | One way MEL ↔ Southern Cross |
-| **Return** | ~NT$936 | Save ~~NT$179 vs two singles |
+| **Return** | ~NT$936 | Save vs two singles |
 | **Child (4-16)** | ~NT$247 | |
-| **Senior (AU/NZ)** | ~NT$750 | With valid card |
 
 **Route:** MEL T2 → Southern Cross Station (~30 min)  
 **Frequency:** Every 10 minutes, 4 AM – 1 AM, 7 days  
@@ -69,78 +130,17 @@ sources: [raw/articles/kkday-tour-research.md, raw/articles/sovereign-hill-resea
 
 ---
 
-## Peninsula Hot Springs — peninsulahotsprings.com (ACTUAL PRICES — VERIFIED APR 2026)
-
-| Option | Price (AUD) | Price (TWD) | Duration |
-|--------|-------------|-------------|----------|
-| **Revitalise Bath House** (standard entry) | $80 | ~NT$1,795 | 2–3 hours |
-| **Reset Bathing** (twilight, after 6pm) | $125 | ~NT$2,804 | 2–3 hours |
-| **Moonlit Bathing** (Spa Dreaming Centre) | $80 | ~NT$1,795 | ~2 hours |
-
-> Note: "Full Day Pass" and "Hilltop Pool" no longer appear in current pricing (2026). The main Bath House standard entry is now $80 AUD. Prices confirmed from official booking site.
-
-**Session times:** 9AM, 12:30PM, 4PM, 7:30PM
-**Book:** peninsulahotsprings.com — sells out weeks ahead
-**Book by:** Jun 25
-
----
-
-## Healesville Sanctuary — healesvillesanctuary.org.au (ACTUAL PRICES)
-
-| Ticket Type | Adult | Child |
-|-------------|-------|-------|
-| **General Admission** | ~~NT$898 | ~~NT$449 |
-
-**Book:** healesvillesanctuary.org.au  
-**Location:** Healesville, Yarra Valley  
-**Open:** Daily 9 AM – 5 PM
-
----
-
-## KKday / Klook Combined Tours
-
-### Great Ocean Road Day Tour
-| | |
-|---|---|
-| **KKday** | kkday.com/en/product/129669 |
-| **Klook** | klook.com/en-AU/activity/1826 |
-| **Price** | ~~NT$1,998–NT$2,448 /person (Klook often ~10-15% cheaper) |
-| **Duration** | ~14 hours (7:30 AM – 9:30 PM) |
-| **Stops** | Lorne, Apollo Bay, Twelve Apostles, Loch Ard Gorge |
-| **Book by** | Jun 24 |
-
-### Sovereign Hill Day Tour
-| | |
-|---|---|
-| **KKday** | kkday.com/en/product/10169 |
-| **Klook** | klook.com/en-AU/activity/10342 |
-| **Price** | ~~NT$1,684–NT$2,133 /person |
-| **Duration** | ~10 hours (8:00 AM – 6:00 PM) |
-| **Book by** | Jun 24 |
-
-### Puffing Billy + Phillip Island (Combined)
-| | |
-|---|---|
-| **Klook** | klook.com/en-AU/activity/2599 |
-| **Price** | ~~NT$2,358–NT$3,256 /person |
-| **Duration** | ~14-15 hours (7:00 AM – 10:00 PM) |
-| **Stops** | Puffing Billy Railway, Koala Centre, The Nobbies, Penguin Parade |
-| **Book by** | Jun 24 |
-
----
-
 ## Budget Summary (2 Adults)
 
 | Tour / Activity | DIY Cost | Tour Agency Cost |
 |----------------|----------|------------------|
-| Penguin Parade (General × 2) | ~NT$1,527 | included in combined |
-| Sovereign Hill (Standard × 2) | ~NT$2,358 | ~~NT$3,369–NT$4,267 |
+| Great Ocean Road (50-person tier × 2) | n/a | ~NT$2,196 |
+| Puffing Billy + Penguins (combo × 2) | n/a | ~NT$10,712–NT$12,954 |
+| Sovereign Hill (Standard × 2) | ~NT$2,358 | ~NT$5,334 |
 | SkyBus return (× 2) | ~NT$1,873 | n/a |
 | Peninsula Hot Springs (Bath House × 2) | ~NT$3,590 | n/a |
-| Healesville Sanctuary (× 2) | ~~NT$1,796 | n/a |
-| **Total** | **~~NT$9,882** | **~~NT$11,230–NT$16,171** |
+| **Total** | **~~NT$7,821** | **~~NT$18,242–NT$20,484** |
 
-DIY saves ~~NT$1,796–NT$6,288 vs tour agency, but requires self-driving or more logistics.
 ## Sources
 - raw/articles/kkday-tour-research
 - raw/articles/sovereign-hill-research

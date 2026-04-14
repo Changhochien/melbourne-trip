@@ -1,7 +1,7 @@
 ---
-title: "Day 6 — Jul 6: Puffing Billy + Penguin Parade"
+title: "Day 6 — Jul 6 (Sunday): Puffing Billy + Penguin Parade"
 created: 2025-07-06
-updated: 2025-07-06
+updated: 2026-04-13
 type: itinerary-day
 tags: [itinerary, day-6, puffing-billy, phillip-island, penguins]
 sources: [raw/articles/puffing-billy-research.md, raw/articles/kkday-tour-research.md]
@@ -11,6 +11,15 @@ sources: [raw/articles/puffing-billy-research.md, raw/articles/kkday-tour-resear
 
 > The longest day. Depart ~7:00 AM, return ~9:30–10:00 PM.
 > **Non-negotiable:** FULL warm layers for Penguin Parade — 5-8°C, Southern Ocean wind.
+
+## Before Departure: Pick Up LUNA Croissants
+
+**[Lune Croissanterie](https://www.google.com/maps/place/Lune+Croissanterie+Melbourne+CBD+on+Russell/)** — [7-9 Crosquel R, Melbourne CBD](https://www.google.com/maps/place/Lune+Croissanterie+Melbourne+CBD+on+Russell/). Arrive at 6:30–6:45 AM to join the queue before opening at 7:00 AM. This is Melbourne's most famous croissant bakery — the queue moves fast and they sell out.
+
+**Get:** Classic butter croissant, almond croissant. Bring napkins — no seating.
+
+**Hours:** Mon–Fri 07:30–17:00 | Sat–Sun 08:00–17:00
+**Why:** Breakfast on the road to Puffing Billy. Don't eat at the station cafe — Lune is in a different league.
 
 ## Map — Puffing Billy + Phillip Island
 

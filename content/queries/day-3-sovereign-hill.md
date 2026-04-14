@@ -1,7 +1,7 @@
 ---
 title: "Day 3 — Jul 3: Sovereign Hill"
 created: 2025-07-03
-updated: 2025-07-03
+updated: 2026-04-13
 type: itinerary-day
 tags: [itinerary, day-3, sovereign-hill, gold-rush, ballarat]
 sources: [raw/articles/sovereign-hill-research.md]
@@ -36,12 +36,24 @@ sources: [raw/articles/sovereign-hill-research.md]
 
 **Book by:** Jun 24
 
-## Direct Booking (Alternative to KKday)
+## Getting There — Self-Drive Option
+
+Going independently via V/Line train is straightforward and saves money:
+
+| Step | Detail |
+|------|--------|
+| **Train** | V/Line from Southern Cross Station → Ballarat Station (~1.5 hrs) |
+| **Bus** | Bus 9, 10, or 21 from Ballarat Station → Sovereign Hill (~5 min) |
+| **Bonus** | If you have a paper train ticket, it includes free travel on Ballarat city buses — including the buses to Sovereign Hill |
+
+> This is a significant saving: ~$6 AUD return vs a ~$80 AUD tour. Do this.
+
+## Booking Direct (Alternative to KKday)
 
 You can also book directly at sovereignhill.com.au — sometimes cheaper, no agency margin:
 
 | Ticket Type | Adult | Child (4-15) |
-|-------------|-------|-------------|
+|-------------|-------|---------------|
 | **Standard Admission** | ~NT$1,179 | ~NT$589 |
 | **AURA Sound & Light Show** | +~NT$1,010 | +~NT$505 |
 | **VIP Rebellion Pass** | ~NT$2,302 | ~NT$1,151 |
@@ -49,6 +61,16 @@ You can also book directly at sovereignhill.com.au — sometimes cheaper, no age
 
 **Website:** sovereignhill.com.au  
 **Book direct:** shtickets.sovereignhill.com.au
+
+## Optional Add-On: Ballarat Wildlife Park
+
+If time allows, [Ballarat Wildlife Park](https://www.google.com/maps/place/Ballarat+Wildlife+Park/) is a 5-minute bus ride from Sovereign Hill. Walk with kangaroos, hold a koala, and get photos with native Australian wildlife.
+
+**Hours:** 9:00 AM – 5:00 PM
+**Admission:** ~$38 AUD/adult, ~$25 AUD/child (book online for discount)
+**Getting there:** Bus 9 or 21 from Sovereign Hill (~5 min)
+
+> July is winter — koalas are less active but still visible and adorable. Kangaroos are year-round.
 
 ## Tour Timing (KKday)
 
