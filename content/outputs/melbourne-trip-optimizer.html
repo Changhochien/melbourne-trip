@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melbourne Trip Optimizer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0a0a14;
+    --card: #12122a;
+    --card2: #1a1a38;
+    --border: #2a2a50;
+    --accent: #e85d04;
+    --text: #d8d8f0;
+    --muted: #8888aa;
+    --green: #4ade80;
+    --blue: #60a5fa;
+    --yellow: #fbbf24;
+    --purple: #a78bfa;
+    --pink: #f472b6;
+    --cyan: #06b6d4;
+    --red: #ef4444;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.6; min-height: 100vh; }
+  .container { max-width: 800px; margin: 0 auto; padding: 24px; }
+
+  .header { text-align: center; padding: 32px 20px; background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 16px; margin-bottom: 28px; border: 1px solid #2a2a4a; }
+  .header h1 { color: var(--accent); font-size: 26px; font-weight: 900; }
+  .header p { color: var(--muted); font-size: 13px; margin-top: 6px; }
+
+  .budget-overview { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 28px; }
+  .budget-overview h2 { color: var(--accent); font-size: 15px; margin-bottom: 14px; }
+  .budget-bar { display: flex; gap: 3px; height: 32px; border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+  .budget-segment { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: white; min-width: 20px; transition: all 0.3s; }
+  .budget-segment.empty { background: #1e1e38; }
+  .budget-labels { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); }
+
+  .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .section h2 { color: var(--accent); font-size: 15px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+
+  .question { margin-bottom: 18px; }
+  .question label { display: block; font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
+  .question .sublabel { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+
+  .option-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .option-btn { background: var(--card2); border: 2px solid var(--border); border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.2s; font-size: 13px; color: var(--text); text-align: left; }
+  .option-btn:hover { border-color: var(--accent); background: #1e1e40; }
+  .option-btn.selected { border-color: var(--accent); background: #1e1e40; box-shadow: 0 0 0 1px var(--accent); }
+  .option-btn .opt-title { font-weight: 700; display: block; }
+  .option-btn .opt-desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .option-btn .opt-price { font-size: 12px; color: var(--green); font-weight: 700; margin-top: 4px; }
+  .option-btn .opt-save { font-size: 11px; color: var(--yellow); }
+
+  .option-grid.single-col { grid-template-columns: 1fr; }
+  .option-btn.full { display: flex; align-items: center; gap: 12px; }
+  .option-btn .radio-circle { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .option-btn.selected .radio-circle { border-color: var(--accent); background: var(--accent); }
+  .option-btn.selected .radio-circle::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: white; }
+
+  .swap-card { background: var(--card2); border: 2px dashed var(--yellow); border-radius: 10px; padding: 14px; margin-top: 14px; }
+  .swap-card h4 { color: var(--yellow); font-size: 13px; margin-bottom: 6px; }
+  .swap-card p { font-size: 12px; color: var(--muted); }
+
+  .day-card { background: var(--card2); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+  .day-card .day-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .day-card .day-badge { background: var(--accent); color: white; font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 12px; }
+  .day-card .day-name { font-weight: 700; font-size: 14px; color: var(--text); }
+  .day-card .day-cost { margin-left: auto; font-size: 12px; color: var(--green); font-weight: 700; }
+  .day-card .day-desc { font-size: 12px; color: var(--muted); }
+
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .toggle-row:last-child { border-bottom: none; }
+  .toggle-label { font-size: 13px; color: var(--text); }
+  .toggle-sub { font-size: 11px; color: var(--muted); }
+  .toggle { position: relative; width: 44px; height: 24px; flex-shrink: 0; }
+  .toggle input { opacity: 0; width: 0; height: 0; }
+  .toggle-slider { position: absolute; inset: 0; background: var(--border); border-radius: 24px; cursor: pointer; transition: 0.2s; }
+  .toggle-slider::before { content: ''; position: absolute; width: 18px; height: 18px; border-radius: 50%; background: white; left: 3px; top: 3px; transition: 0.2s; }
+  .toggle input:checked + .toggle-slider { background: var(--accent); }
+  .toggle input:checked + .toggle-slider::before { transform: translateX(20px); }
+
+  .result-box { background: linear-gradient(135deg, #1a2a1a, #12221a); border: 2px solid var(--green); border-radius: 16px; padding: 24px; margin-top: 20px; display: none; }
+  .result-box.visible { display: block; }
+  .result-box h2 { color: var(--green); font-size: 18px; margin-bottom: 16px; text-align: center; }
+  .result-summary { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 20px; text-align: center; }
+  .result-summary .num { font-size: 22px; font-weight: 900; color: var(--green); }
+  .result-summary .label { font-size: 11px; color: var(--muted); }
+  .result-prompt { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px; font-family: monospace; font-size: 12px; color: var(--text); white-space: pre-wrap; line-height: 1.8; max-height: 400px; overflow-y: auto; }
+  .result-actions { display: flex; gap: 10px; margin-top: 14px; justify-content: center; }
+  .btn { background: var(--accent); color: white; border: none; border-radius: 8px; padding: 10px 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+  .btn:hover { background: #ff6d10; transform: translateY(-1px); }
+  .btn.secondary { background: var(--card2); border: 1px solid var(--border); color: var(--text); }
+  .btn.secondary:hover { border-color: var(--accent); }
+
+  .generate-btn { width: 100%; background: linear-gradient(135deg, var(--accent), #ff6d10); color: white; border: none; border-radius: 12px; padding: 16px; font-size: 16px; font-weight: 900; cursor: pointer; margin-top: 20px; transition: all 0.2s; text-align: center; }
+  .generate-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(232,93,4,0.4); }
+
+  .tooltip { font-size: 11px; color: var(--yellow); cursor: help; border-bottom: 1px dashed var(--yellow); }
+
+  .savings-badge { background: #1a2a1a; color: var(--green); font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>Melbourne Trip Optimizer</h1>
+  <p>Answer a few questions → Get a personalized cost-effective itinerary</p>
+</div>
+
+<!-- BUDGET OVERVIEW -->
+<div class="budget-overview">
+  <h2>Your Budget Spectrum</h2>
+  <div class="budget-bar" id="budgetBar">
+    <div class="budget-segment empty" style="flex:1"></div>
+  </div>
+  <div class="budget-labels">
+    <span>💸 Barebones<br><strong style="color:var(--text)">~$2,800</strong></span>
+    <span>⚖️ Balanced<br><strong style="color:var(--text)">~$4,500</strong></span>
+    <span>🌟 Premium<br><strong style="color:var(--text)">~$7,000+</strong></span>
+  </div>
+</div>
+
+<!-- SECTION 1: BUDGET LEVEL -->
+<div class="section">
+  <h2>1️⃣ How much do you want to spend?</h2>
+
+  <div class="question">
+    <label>Budget level</label>
+    <div class="option-grid">
+      <button class="option-btn" data-group="budget" data-value="lean" onclick="selectOption(this)">
+        <span class="opt-title">💸 Lean</span>
+        <span class="opt-desc">Hostel dorms, self-catering, free activities</span>
+        <span class="opt-price">~$2,800 / 2p excl. flights</span>
+        <span class="opt-save">Save ~$2,400 vs premium</span>
+      </button>
+      <button class="option-btn selected" data-group="budget" data-value="balanced" onclick="selectOption(this)">
+        <span class="opt-title">⚖️ Balanced</span>
+        <span class="opt-desc">Private rooms, mix of cooking + eating out, key tours</span>
+        <span class="opt-price">~$4,500 / 2p excl. flights</span>
+        <span class="opt-save">Best value experience</span>
+      </button>
+      <button class="option-btn" data-group="budget" data-value="comfortable" onclick="selectOption(this)">
+        <span class="opt-title">🌟 Comfortable</span>
+        <span class="opt-desc">Hotels, restaurants, all planned activities</span>
+        <span class="opt-price">~$5,500 / 2p excl. flights</span>
+        <span class="opt-save">Current plan</span>
+      </button>
+      <button class="option-btn" data-group="budget" data-value="premium" onclick="selectOption(this)">
+        <span class="opt-title">✨ Premium</span>
+        <span class="opt-desc">Luxury hotels, private tours, no budget decisions</span>
+        <span class="opt-price">~$7,000+ / 2p excl. flights</span>
+        <span class="opt-save">No compromises</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: ACTIVITIES -->
+<div class="section">
+  <h2>2️⃣ Which days are must-do vs skip?</h2>
+
+  <div class="question">
+    <label>Great Ocean Road Day Tour (Day 2)</label>
+    <div class="option-grid">
+      <button class="option-btn selected full" data-group="gor" data-value="keep" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Keep it</span>
+          <span class="opt-desc">The iconic road trip. ~$95/p, 14-hour day.</span>
+          <span class="opt-price">~$190 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="gor" data-value="skip" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Skip</span>
+          <span class="opt-desc">Free day instead. Explore Melbourne on foot.</span>
+          <span class="opt-price">Save ~$190</span>
+        </div>
+      </button>
+    </div>
+    <div class="swap-card" id="gor-swap">
+      <h4>💡 If skipped: Day 2 alternative</h4>
+      <p>Melbourne CBD free exploration: State Library + NGV + laneways. Save $190 but miss one of Victoria's top experiences.</p>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Sovereign Hill Gold Town (Day 3)</label>
+    <div class="option-grid">
+      <button class="option-btn selected full" data-group="sovereign" data-value="keep" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Keep it</span>
+          <span class="opt-desc">Gold panning, underground mine. Really engaging.</span>
+          <span class="opt-price">~$170 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="sovereign" data-value="swap" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Swap → Melbourne Museum</span>
+          <span class="opt-desc">Free/cheap.Indigenous Australian history, natural history.</span>
+          <span class="opt-price">Save ~$140</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="sovereign" data-value="skip" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Skip entirely</span>
+          <span class="opt-desc">Full free day. Lygon Street Italian, shopping.</span>
+          <span class="opt-price">Save ~$170</span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Puffing Billy + Phillip Island (Day 6)</label>
+    <div class="option-grid">
+      <button class="option-btn selected full" data-group="puffin" data-value="keep" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Keep it</span>
+          <span class="opt-desc">Heritage train + penguin parade. Long day but magical.</span>
+          <span class="opt-price">~$270 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="puffin" data-value="skip" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Skip — free day instead</span>
+          <span class="opt-desc">Second CBD exploration day, DFO shopping.</span>
+          <span class="opt-price">Save ~$270</span>
+        </div>
+      </button>
+    </div>
+    <div class="swap-card" id="puffin-swap">
+      <h4>💡 If skipped: Day 6 alternative</h4>
+      <p>Melbourne second city day: Melbourne Zoo OR free CBD exploration + DFO South Wharf shopping. Save $270.</p>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Peninsula Hot Springs (Day 8)</label>
+    <div class="option-grid">
+      <button class="option-btn selected full" data-group="hotsprings" data-value="keep" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Keep — Bath House</span>
+          <span class="opt-desc">Best hot springs in Victoria. Essential experience.</span>
+          <span class="opt-price">~$104 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="hotsprings" data-value="reduce" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Reduce to Half Day</span>
+          <span class="opt-desc">1.5hr session instead of 3hr. Just the key pools.</span>
+          <span class="opt-price">Save ~$30</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="hotsprings" data-value="skip" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Skip</span>
+          <span class="opt-desc">Full day at beach instead. Rye/Portsea.</span>
+          <span class="opt-price">Save ~$104</span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Yarra Valley Day (Day 9)</label>
+    <div class="option-grid">
+      <button class="option-btn selected full" data-group="yarra" data-value="selfdrive" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Self-drive</span>
+          <span class="opt-desc">Car rental + Healesville + wineries. Most flexible.</span>
+          <span class="opt-price">~$205 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="yarra" data-value="guided" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Guided tour</span>
+          <span class="opt-desc">Tour bus + guide. Less stress, company.</span>
+          <span class="opt-price">~$260 for 2</span>
+        </div>
+      </button>
+      <button class="option-btn full" data-group="yarra" data-value="city" onclick="selectOption(this)">
+        <div class="radio-circle"></div>
+        <div>
+          <span class="opt-title">Free city day</span>
+          <span class="opt-desc">State Library + NGV + last shopping. Zero extra cost.</span>
+          <span class="opt-price">Save ~$205</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: ACCOMMODATION -->
+<div class="section">
+  <h2>3️⃣ Accommodation style</h2>
+
+  <div class="question">
+    <label>Accommodation level</label>
+    <div class="option-grid">
+      <button class="option-btn" data-group="accom" data-value="hostel" onclick="selectOption(this)">
+        <span class="opt-title">🛏️ Hostel private room</span>
+        <span class="opt-desc">YHA Melbourne / Space Hotel private rooms. Clean, central.</span>
+        <span class="opt-price">~$90-120/night</span>
+        <span class="opt-save">Save ~$80-100/night</span>
+      </button>
+      <button class="option-btn selected" data-group="accom" data-value="mid" onclick="selectOption(this)">
+        <span class="opt-title">🏨 Mid-range hotel</span>
+        <span class="opt-desc">Mantra, Citadines, Adina. Kitchenette available.</span>
+        <span class="opt-price">~$170-200/night</span>
+        <span class="opt-save">Current plan</span>
+      </button>
+      <button class="option-btn" data-group="accom" data-value="airbnb" onclick="selectOption(this)">
+        <span class="opt-title">🏠 Airbnb with kitchen</span>
+        <span class="opt-desc">All 8 nights. Cook your own breakfast/dinner. Biggest food savings.</span>
+        <span class="opt-price">~$160-200/night</span>
+        <span class="opt-save">Save ~$15-20/day on food</span>
+      </button>
+      <button class="option-btn" data-group="accom" data-value="premium" onclick="selectOption(this)">
+        <span class="opt-title">🌟 Premium hotel</span>
+        <span class="opt-desc">Hyatt, Ovolo. Full service, great locations.</span>
+        <span class="opt-price">~$280-380/night</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Peninsula accommodation (Nights 7-8)</label>
+    <div class="option-grid">
+      <button class="option-btn selected" data-group="peninsula" data-value="rye" onclick="selectOption(this)">
+        <span class="opt-title">Rye apartment</span>
+        <span class="opt-desc">2BR beach apartment. Convenient + quiet.</span>
+        <span class="opt-price">~$180-220/night</span>
+      </button>
+      <button class="option-btn" data-group="peninsula" data-value="cshanck" onclick="selectOption(this)">
+        <span class="opt-title">RACV Cape Schanck</span>
+        <span class="opt-desc">Resort with pool + spa. Worth the splurge?</span>
+        <span class="opt-price">~$280-350/night</span>
+      </button>
+      <button class="option-btn" data-group="peninsula" data-value="budget" onclick="selectOption(this)">
+        <span class="opt-title">🌿 Budget cabin</span>
+        <span class="opt-desc">RACV Holiday Park cabin. Basic but functional.</span>
+        <span class="opt-price">~$120-160/night</span>
+        <span class="opt-save">Save ~$80-100/night</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: FOOD STRATEGY -->
+<div class="section">
+  <h2>4️⃣ Food & dining approach</h2>
+
+  <div class="question">
+    <label>Food budget strategy</label>
+    <div class="option-grid">
+      <button class="option-btn" data-group="food" data-value="cook" onclick="selectOption(this)">
+        <span class="opt-title">🥘 Cook most meals</span>
+        <span class="opt-desc">QVM Day 4 for supplies. Airbnb kitchen. Big savings.</span>
+        <span class="opt-price">~$1,500 for 2 (10 days)</span>
+        <span class="opt-save">Save ~$700+ vs eating out</span>
+      </button>
+      <button class="option-btn selected" data-group="food" data-value="mix" onclick="selectOption(this)">
+        <span class="opt-title">🍜 Mix it up</span>
+        <span class="opt-desc">Cook breakfasts, eat out for lunch/dinner. Good balance.</span>
+        <span class="opt-price">~$2,200 for 2</span>
+        <span class="opt-save">Save ~$200-300</span>
+      </button>
+      <button class="option-btn" data-group="food" data-value="eatout" onclick="selectOption(this)">
+        <span class="opt-title">🍽️ Eat out everything</span>
+        <span class="opt-desc">Full Melbourne food experience. No compromises.</span>
+        <span class="opt-price">~$2,700 for 2</span>
+      </button>
+      <button class="option-btn" data-group="food" data-value="street" onclick="selectOption(this)">
+        <span class="opt-title">🥡 Street food mode</span>
+        <span class="opt-desc">Markets, food halls, pub meals, Asian eateries. Maximum savings.</span>
+        <span class="opt-price">~$1,300 for 2</span>
+        <span class="opt-save">Save ~$1,000+</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: TRANSPORT -->
+<div class="section">
+  <h2>5️⃣ Transport & airport</h2>
+
+  <div class="question">
+    <label>Airport transfer — Arrival (Day 1)</label>
+    <div class="option-grid">
+      <button class="option-btn selected" data-group="arrive" data-value="skybus" onclick="selectOption(this)">
+        <span class="opt-title">🚌 SkyBus</span>
+        <span class="opt-desc">$22.60/p. 30-40 min. Most reliable.</span>
+        <span class="opt-price">~$45 for 2</span>
+      </button>
+      <button class="option-btn" data-group="arrive" data-value="rideshare" onclick="selectOption(this)">
+        <span class="opt-title">🚗 Rideshare</span>
+        <span class="opt-desc">Uber/Didi. Door to door. More convenient.</span>
+        <span class="opt-price">~$55-70</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Airport transfer — Departure (Day 10)</label>
+    <div class="option-grid">
+      <button class="option-btn selected" data-group="depart" data-value="skybus" onclick="selectOption(this)">
+        <span class="opt-title">🚌 SkyBus</span>
+        <span class="opt-desc">$22.60/p. Leave Southern Cross ~2 PM.</span>
+        <span class="opt-price">~$45 for 2</span>
+      </button>
+      <button class="option-btn" data-group="depart" data-value="rideshare" onclick="selectOption(this)">
+        <span class="opt-title">🚗 Rideshare</span>
+        <span class="opt-desc">From CBD hotel. More convenient for luggage.</span>
+        <span class="opt-price">~$55-70</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>Day 5 (Fitzroy + St Kilda) transport</label>
+    <div class="option-grid">
+      <button class="option-btn selected" data-group="tram" data-value="tram" onclick="selectOption(this)">
+        <span class="opt-title">🚃 Tram</span>
+        <span class="opt-desc">Tram 11/12 to Fitzroy. Tram 96 to St Kilda. Free in CBD zone.</span>
+        <span class="opt-price">~$0 in Free Tram Zone</span>
+      </button>
+      <button class="option-btn" data-group="tram" data-value="walk" onclick="selectOption(this)">
+        <span class="opt-title">🚶 Walk only</span>
+        <span class="opt-desc">Melbourne is very walkable. Skip tram costs entirely.</span>
+        <span class="opt-price">Free</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6: EXTRAS -->
+<div class="section">
+  <h2>6️⃣ Optional add-ons</h2>
+
+  <div class="question">
+    <label>Optional extras</label>
+    <div style="background: var(--card2); border-radius: 10px; padding: 14px;">
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-label">🐧 Penguin Plus upgrade</div>
+          <div class="toggle-sub">Elevated platform at Phillip Island — much better views</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="penguinPlus">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-label">🌊 Hilltop Pool upgrade</div>
+          <div class="toggle-sub">Premium hillside thermal pools at Peninsula Hot Springs</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="hilltop">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-label">🚂 Small group tour upgrade</div>
+          <div class="toggle-sub">Max 12-20p instead of 45-seat coach. Worth it on long days.</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="smallGroup">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-label">🍷 Wine tasting at all wineries</div>
+          <div class="toggle-sub">Opt in to paid cellar door tastings at Yarra Valley + Mornington</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="wineTasting" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <div class="toggle-row">
+        <div>
+          <div class="toggle-label">🛡️ Travel insurance</div>
+          <div class="toggle-sub">Highly recommended for international travel</div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="insurance" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESULT -->
+<div class="result-box" id="resultBox">
+  <h2>✅ Your Optimized Melbourne Trip</h2>
+  <div class="result-summary">
+    <div>
+      <div class="num" id="resultTotal">$4,500</div>
+      <div class="label">Total est. (2p)</div>
+    </div>
+    <div>
+      <div class="num" id="resultSavings">-$0</div>
+      <div class="label">Savings vs current</div>
+    </div>
+    <div>
+      <div class="num" id="resultDays">10</div>
+      <div class="label">Days</div>
+    </div>
+  </div>
+
+  <div class="result-prompt" id="resultPrompt"></div>
+
+  <div class="result-actions">
+    <button class="btn" onclick="copyPrompt()">📋 Copy prompt</button>
+    <button class="btn secondary" onclick="resetAll()">Start over</button>
+  </div>
+</div>
+
+<button class="generate-btn" onclick="generate()">
+  ⚡ Generate optimized plan & prompt →
+</button>
+
+</div>
+
+<script>
+// State
+const state = {
+  budget: 'balanced',
+  gor: 'keep',
+  sovereign: 'keep',
+  puffin: 'keep',
+  hotsprings: 'keep',
+  yarra: 'selfdrive',
+  accom: 'mid',
+  peninsula: 'rye',
+  food: 'mix',
+  arrive: 'skybus',
+  depart: 'skybus',
+  tram: 'tram',
+};
+
+// Base costs (per person unless noted)
+const COSTS = {
+  // Accommodation per night (total, not per person)
+  hostel_per_night: 100,
+  mid_per_night: 190,
+  airbnb_per_night: 180,
+  premium_per_night: 320,
+  peninsula_hostel: 140,
+  peninsula_rye: 200,
+  peninsula_premium: 300,
+
+  // Tours (per person)
+  gor_pp: 95,
+  sovereign_pp: 85,
+  puffin_pp: 135,
+  hotsprings_pp: 52,
+  hotsprings_half_pp: 35,
+  yarra_self_pp: 100, // car + activities / 2
+  yarra_guide_pp: 130,
+  yarra_free: 0,
+
+  // Food per day (per person)
+  cook_day: 15,
+  mix_day: 25,
+  eatout_day: 30,
+  street_day: 12,
+
+  // Transport
+  skybus_pp: 22.6,
+  rideshare: 60,
+  myki_total: 70, // full trip
+  car_day7_8: 80,
+  car_day9: 75,
+  fuel_total: 50,
+
+  // Extras
+  penguin_plus_pp: 22,
+  hilltop_pp: 20,
+  small_group_pp: 25,
+  wine_total: 50, // 2 people total
+  insurance_pp: 70,
+};
+
+function selectOption(btn) {
+  const group = btn.dataset.group;
+  const value = btn.dataset.value;
+
+  // Radio-style: deselect siblings
+  document.querySelectorAll(`[data-group="${group}"]`).forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  state[group] = value;
+
+  // Show/hide swap cards
+  if (group === 'gor') document.getElementById('gor-swap').style.display = value === 'skip' ? 'block' : 'none';
+  if (group === 'puffin') document.getElementById('puffin-swap').style.display = value === 'skip' ? 'block' : 'none';
+
+  updateBudgetBar();
+  updateResult();
+}
+
+function getAccommNights() {
+  // Nights 1-8 = 8 nights. Peninsula takes nights 7-8.
+  return 8;
+}
+
+function calcTotal() {
+  let total = 0;
+  const p = 2; // 2 people
+
+  // Accommodation
+  const accomMap = {
+    hostel: { main: COSTS.hostel_per_night, peninsula: COSTS.peninsula_hostel },
+    mid: { main: COSTS.mid_per_night, peninsula: COSTS.peninsula_rye },
+    airbnb: { main: COSTS.airbnb_per_night, peninsula: COSTS.peninsula_rye },
+    premium: { main: COSTS.premium_per_night, peninsula: COSTS.peninsula_premium },
+  };
+  const am = accomMap[state.accom] || accomMap.mid;
+  total += am.main * 6; // Nights 1-6 (CBD)
+  total += am.peninsula * 2; // Nights 7-8 (Peninsula)
+  total += am.main * 1; // Night 8 (back to CBD)
+  // = 9 nights total
+
+  // Tours
+  if (state.gor === 'keep') total += COSTS.gor_pp * p;
+  if (state.sovereign === 'keep') total += COSTS.sovereign_pp * p;
+  else if (state.sovereign === 'swap') total += 10 * p; // Melbourne Museum
+  if (state.puffin === 'keep') total += COSTS.puffin_pp * p;
+  if (state.hotsprings === 'keep') total += COSTS.hotsprings_pp * p;
+  else if (state.hotsprings === 'reduce') total += COSTS.hotsprings_half_pp * p;
+
+  // Yarra
+  if (state.yarra === 'selfdrive') total += (COSTS.car_day9 + 40) + (40 * p); // car + activities
+  else if (state.yarra === 'guided') total += COSTS.yarra_guide_pp * p;
+  else if (state.yarra === 'city') total += 0;
+
+  // Car rental Days 7-8
+  if (state.yarra !== 'city') {
+    total += COSTS.car_day7_8 * 2;
+    total += COSTS.fuel_total;
+  } else {
+    // Need car for Peninsula still
+    total += COSTS.car_day7_8 * 2;
+    total += COSTS.fuel_total * 0.6; // less driving
+  }
+
+  // Food
+  const foodMap = { cook: COSTS.cook_day, mix: COSTS.mix_day, eatout: COSTS.eatout_day, street: COSTS.street_day };
+  const fd = foodMap[state.food] || COSTS.mix_day;
+  total += fd * p * 10; // 10 days
+
+  // Transport
+  total += COSTS.skybus_pp * p * 2; // arrival + departure
+  total += COSTS.myki_total;
+
+  // Extras
+  if (document.getElementById('penguinPlus').checked && state.puffin === 'keep') total += COSTS.penguin_plus_pp * p;
+  if (document.getElementById('hilltop').checked && state.hotsprings !== 'skip') total += COSTS.hilltop_pp * p;
+  if (document.getElementById('smallGroup').checked) {
+    if (state.gor === 'keep') total += COSTS.small_group_pp * p;
+    if (state.sovereign === 'keep') total += COSTS.small_group_pp * p * 0.5;
+  }
+  if (document.getElementById('wineTasting').checked) total += COSTS.wine_total;
+  if (document.getElementById('insurance').checked) total += COSTS.insurance_pp * p;
+
+  return Math.round(total);
+}
+
+function getSavings() {
+  const baseline = 5700; // comfortable plan baseline
+  const current = calcTotal();
+  return baseline - current;
+}
+
+function getDayPlan() {
+  const days = [];
+  const p = 2;
+
+  // Day 1
+  days.push({
+    day: 1, date: 'Jul 1 (Tue)', theme: 'Arrive Melbourne',
+    cost: Math.round(COSTS.skybus_pp * p + 40), // skybus + light dinner
+    desc: `TR873 01:35 TPE → SIN → MEL 20:20. SkyBus ${state.arrive === 'skybus' ? '(SkyBus $22.60/p)' : '(Rideshare ~$60)'} to CBD hotel. Light dinner, rest.`
+  });
+
+  // Day 2
+  if (state.gor === 'keep') {
+    const smallGroup = document.getElementById('smallGroup').checked ? ' (small group +$25/p)' : '';
+    days.push({
+      day: 2, date: 'Jul 2 (Wed)', theme: 'Great Ocean Road',
+      cost: Math.round(COSTS.gor_pp * p + 50 + (document.getElementById('smallGroup').checked ? 50 : 0)),
+      desc: `KKday/Klook tour. ${state.gor === 'keep' ? '' : '(SKIPPED)'} Lorne → Apollo Bay → Twelve Apostles → Loch Ard Gorge. 7:30 AM – 9:30 PM. Lunch ~$30/p.${smallGroup}`
+    });
+  } else {
+    days.push({
+      day: 2, date: 'Jul 2 (Wed)', theme: 'Melbourne Free Day',
+      cost: 30,
+      desc: `Free day: State Library Victoria (free) → NGV International (free) → Hosier Lane street art → Lygon Street Italian lunch. No tour cost.`
+    });
+  }
+
+  // Day 3
+  if (state.sovereign !== 'skip') {
+    const act = state.sovereign === 'swap' ? 'Melbourne Museum' : 'Sovereign Hill';
+    const cost = state.sovereign === 'swap' ? 20 * p : COSTS.sovereign_pp * p;
+    days.push({
+      day: 3, date: 'Jul 3 (Thu)', theme: state.sovereign === 'swap' ? 'Melbourne Museum' : 'Sovereign Hill Gold Town',
+      cost: Math.round(cost + 30 * p),
+      desc: state.sovereign === 'swap'
+        ? `Melbourne Museum: Indigenous Australian history, natural history, planetarium. ~$20/p. Lunch in Carlton. Afternoon at Federation Square.`
+        : `KKday tour. Gold panning, underground mine, period town. Ballarat. 8 AM – 6 PM. Lunch ~$30/p.`
+    });
+  } else {
+    days.push({
+      day: 3, date: 'Jul 3 (Thu)', theme: 'Free Day — Melbourne',
+      cost: 50,
+      desc: `Full free day. Lygon Street Italian lunch → Melbourne Central shopping → optional: Immigration Museum or ArtPlay. No tour cost.`
+    });
+  }
+
+  // Day 4
+  days.push({
+    day: 4, date: 'Jul 4 (Fri)', theme: 'QVM + CBD Laneways',
+    cost: 40,
+    desc: `Queen Victoria Market (Friday = extended hours, full produce). Laneways: Hosier Lane → Block Arcade → Royal Arcade. Afternoon: NGV International (free). Dinner in Southbank. QVM breakfast/lunch supplies ~$30.`
+  });
+
+  // Day 5
+  const tramCost = state.tram === 'tram' ? 0 : 0;
+  days.push({
+    day: 5, date: 'Jul 5 (Sat)', theme: 'Fitzroy + St Kilda',
+    cost: 40 + tramCost,
+    desc: `Tram to Fitzroy (${tramCost === 0 ? 'Free Tram Zone' : 'walk'}). Brunswick Street coffee → Gertrude Street vintage shops → Smith Street lunch. Tram 96 to St Kilda (${tramCost === 0 ? 'Free' : 'walk'}). Acland Street bakeries → St Kilda Pier sunset. Dinner at Acland Street.`
+  });
+
+  // Day 6
+  if (state.puffin === 'keep') {
+    const penguin = document.getElementById('penguinPlus').checked ? 'Penguin Plus upgrade (elevated platform, recommended)' : 'General viewing';
+    days.push({
+      day: 6, date: 'Jul 6 (Sun)', theme: 'Puffing Billy + Phillip Island',
+      cost: Math.round(COSTS.puffin_pp * p + (document.getElementById('penguinPlus').checked ? COSTS.penguin_plus_pp * p : 0) + 30 * p),
+      desc: `KKday combined tour. Puffing Billy Railway (Belgrave → Lakeside) → Koala Conservation Centre → The Nobbies → Penguin Parade (${penguin}). ARRIVE 4 PM. FULL WARM LAYERS ESSENTIAL — 5-8°C, Southern Ocean wind. 7 AM – 10 PM.`
+    });
+  } else {
+    days.push({
+      day: 6, date: 'Jul 6 (Sun)', theme: 'Free Day — Melbourne',
+      cost: 50,
+      desc: `Free day: Melbourne Zoo OR DFO South Wharf shopping (big brand outlet, 2-3 hrs) + last-minute souvenirs. Lunch at Degraves Street. Early night before Peninsula drive.`
+    });
+  }
+
+  // Day 7
+  const peninsula_cost = state.peninsula === 'budget' ? 130 : state.peninsula === 'rye' ? 200 : 300;
+  days.push({
+    day: 7, date: 'Jul 7 (Mon)', theme: 'Drive to Mornington Peninsula',
+    cost: Math.round(COSTS.car_day7_8 * 2 + 30 * p),
+    desc: `Pick up rental car. Drive to Rye (75 km, ~1h15). ${state.peninsula === 'budget' ? 'RACV Holiday Park cabin' : state.peninsula === 'rye' ? 'Rye 2BR apartment' : 'RACV Cape Schanck Resort'}. Afternoon: Arthurs Seat summit → Red Hill wineries (2 cellar doors, tasting ~$15/p) → Sorrento/Portsea. Dinner in Rye. CAR RENTAL: ~$80/day + insurance.`
+  });
+
+  // Day 8
+  const hotCost = state.hotsprings === 'keep' ? COSTS.hotsprings_pp * p : state.hotsprings === 'reduce' ? COSTS.hotsprings_half_pp * p : 0;
+  const hotNote = state.hotsprings === 'keep' ? 'Peninsula Hot Springs Bath House (2-3hr)' : state.hotsprings === 'reduce' ? 'Peninsula Hot Springs Half Day' : 'Full beach day at Rye/Portsea';
+  days.push({
+    day: 8, date: 'Jul 8 (Tue)', theme: 'Hot Springs + Return CBD',
+    cost: Math.round(hotCost + COSTS.car_day7_8 + 40 * p + 30),
+    desc: `${hotNote}. ${state.hotsprings !== 'skip' ? 'Book online — morning session recommended.' : ''} Drive back to Melbourne CBD (75 km). Return car. Check in CBD hotel. Final dinner: ${state.food === 'cook' ? 'Cook at accommodation' : 'Restaurant — celebrate trip end!'}.`
+  });
+
+  // Day 9
+  if (state.yarra === 'selfdrive') {
+    days.push({
+      day: 9, date: 'Jul 9 (Wed)', theme: 'Yarra Valley Self-Drive',
+      cost: Math.round(COSTS.car_day9 + 80 + (document.getElementById('wineTasting').checked ? COSTS.wine_total : 0)),
+      desc: `Self-drive Yarra Valley (60 km). Healesville Sanctuary (book online, ~$40/p). ${document.getElementById('wineTasting').checked ? 'Yering Station + Oakridge cellar doors (~$20/p tasting)' : '2 wineries — free tastings at some wineries'}. Lunch at Healesville. Return to CBD.`
+    });
+  } else if (state.yarra === 'guided') {
+    days.push({
+      day: 9, date: 'Jul 9 (Wed)', theme: 'Yarra Valley Guided Tour',
+      cost: Math.round(COSTS.yarra_guide_pp * p + 40 + (document.getElementById('wineTasting').checked ? COSTS.wine_total : 0)),
+      desc: `KKday/Klook guided tour. Healesville Sanctuary + 3 wineries. Healesville: book online. ${document.getElementById('wineTasting').checked ? 'Wine tastings included.' : 'Optional extra tastings.'} Return CBD.`
+    });
+  } else {
+    days.push({
+      day: 9, date: 'Jul 9 (Wed)', theme: 'Melbourne City Rain Day',
+      cost: 30,
+      desc: `Free city day. State Library reading room → NGV major exhibition (ticketed) → Melbourne Central → last shopping. Lunch at Degraves Street. No car/tour cost. ZERO extra expense.`
+    });
+  }
+
+  // Day 10
+  days.push({
+    day: 10, date: 'Jul 10 (Thu)', theme: 'Depart Melbourne',
+    cost: Math.round(COSTS.skybus_pp * p + 40),
+    desc: `Final morning: one last flat white, Hosier Lane without crowds. Check out. ${state.depart === 'skybus' ? 'SkyBus' : 'Rideshare'} to MEL T2. TR39 21:35 depart. ${document.getElementById('insurance').checked ? 'Travel insurance active.' : ''}`
+  });
+
+  return days;
+}
+
+function buildPrompt() {
+  const total = calcTotal();
+  const savings = getSavings();
+  const p = 2;
+  const days = getDayPlan();
+
+  let prompt = `You are planning a Melbourne trip for 2 people (YEN-YI + 1 companion) from July 1-10, 2025.
+
+FLIGHTS ALREADY BOOKED (booking ref TYYQ4Z):
+- Outbound: Jul 1 TR873 TPE 01:35 → SIN 06:00 | TR38 SIN 11:05 → MEL 20:20
+- Return: Jul 10 TR39 MEL 21:35 → SIN 03:40+1 | Jul 11 TR874 SIN 09:30 → TPE 14:15
+
+TRIP BUDGET PROFILE: ${state.budget.toUpperCase()}
+Estimated total: ~$${total} AUD for 2 people (excl. flights)
+
+ACCOMMODATION: ${state.accom === 'hostel' ? 'Hostel private rooms (~$90-120/night)' : state.accom === 'mid' ? 'Mid-range hotels (~$170-200/night) with kitchenette' : state.accom === 'airbnb' ? 'Airbnb with full kitchen — cook own meals' : 'Premium hotels (~$280-380/night)'}
+${state.peninsula === 'budget' ? 'Peninsula: Budget cabin (~$120-160/night)' : state.peninsula === 'rye' ? 'Peninsula: Rye 2BR apartment (~$180-220/night)' : 'Peninsula: RACV Cape Schanck resort (~$280-350/night)'}
+
+FOOD STRATEGY: ${state.food === 'cook' ? 'Cook most meals — QVM supplies + Airbnb kitchen. Target: ~$15/p/day.' : state.food === 'mix' ? 'Mix: cook breakfasts, eat out for lunch/dinner. Target: ~$25/p/day.' : state.food === 'eatout' ? 'Eat out for all meals — full Melbourne food experience. ~$30/p/day.' : 'Street food mode: markets, food halls, pubs, Asian eateries. ~$12/p/day.'}
+
+ACTIVITIES DECISIONS:
+${state.gor === 'keep' ? '- Great Ocean Road Day Tour: KEEP (~$95/p)' : '- Great Ocean Road Day Tour: SKIP — free Melbourne city day instead'}
+${state.sovereign === 'keep' ? '- Sovereign Hill: KEEP (~$85/p)' : state.sovereign === 'swap' ? '- Sovereign Hill: SWAP to Melbourne Museum (~$10/p)' : '- Sovereign Hill: SKIP — free day'}
+${state.puffin === 'keep' ? `- Puffing Billy + Phillip Island: KEEP (~$135/p)${document.getElementById('penguinPlus').checked ? ' + Penguin Plus upgrade' : ''}` : '- Puffing Billy + Phillip Island: SKIP — free Melbourne day instead'}
+${state.hotsprings === 'keep' ? '- Peninsula Hot Springs: KEEP Bath House (~$52/p)' : state.hotsprings === 'reduce' ? '- Peninsula Hot Springs: HALF DAY (~$35/p)' : '- Peninsula Hot Springs: SKIP — full beach day instead'}
+${state.yarra === 'selfdrive' ? `- Yarra Valley: SELF-DRIVE (~$100/p: car + activities)${document.getElementById('wineTasting').checked ? ' + paid cellar door tastings' : ''}` : state.yarra === 'guided' ? `- Yarra Valley: GUIDED TOUR (~$130/p)${document.getElementById('wineTasting').checked ? ' + paid cellar door tastings' : ''}` : '- Yarra Valley: FREE CITY DAY — State Library + NGV + shopping'}
+
+TRANSPORT: SkyBus ${state.arrive === 'skybus' ? 'arrival' : 'arrival+departure'} ${state.depart !== 'skybus' ? '(rideshare for departure)' : ''}. ${state.tram === 'walk' ? 'Walk-only for city days (no Myki needed).' : 'Free Tram Zone for CBD, Myki Zone 1 for outer trips.'}
+Car rental: Days 7-8 (Peninsula) ${state.yarra === 'city' ? '(no car Day 9)' : '+ Day 9 Yarra Valley'}.
+
+EXTRAS: Penguin Plus upgrade: ${document.getElementById('penguinPlus').checked ? 'YES' : 'NO'}. Wine tasting: ${document.getElementById('wineTasting').checked ? 'YES' : 'NO'}. Travel insurance: ${document.getElementById('insurance').checked ? 'YES' : 'NO'}.
+
+DETAILED DAY PLAN:
+${days.map(d => `Day ${d.day} (${d.date}) — ${d.theme}
+  Est. cost: ~$${d.cost}/2p | ${d.desc}`).join('\n\n')}
+
+TOTAL ESTIMATED BUDGET: ~$${total} AUD (excl. flights)
+SAVINGS vs original plan: ~$${savings > 0 ? savings : 0} AUD
+
+REQUEST:
+1. Optimize the day-by-day schedule above for flow, logistics, and time efficiency
+2. Suggest any day swaps or timing changes that make more sense
+3. Flag any gaps or conflicts in the plan
+4. Recommend specific accommodation names/locations for the choices made
+5. Give a final recommended packing list for the trip given all activities
+6. Give a final meal-by-meal food recommendation for each day
+7. Flag any bookings that need to be made and by when (deadline)
+`;
+
+  return prompt;
+}
+
+function updateBudgetBar() {
+  const total = calcTotal();
+  const savings = getSavings();
+  const maxBudget = 7000;
+  const leanBudget = 2800;
+  const balancedBudget = 4500;
+  const premiumBudget = 7000;
+
+  // Budget bar segments
+  const bar = document.getElementById('budgetBar');
+  const pct = Math.min((total / maxBudget) * 100, 100);
+
+  // Determine color based on total
+  let color = '#e85d04'; // default orange
+  if (total < 3000) color = '#4ade80';
+  else if (total < 4000) color = '#22c55e';
+  else if (total < 5500) color = '#e85d04';
+  else color = '#f97316';
+
+  bar.innerHTML = `<div class="budget-segment" style="flex:${pct}; background:${color}"><span style="font-size:10px;padding:2px 4px;">$${total.toLocaleString()}</span></div>`;
+
+  // Update result if visible
+  if (document.getElementById('resultBox').classList.contains('visible')) {
+    updateResult();
+  }
+}
+
+function updateResult() {
+  const total = calcTotal();
+  const savings = getSavings();
+  document.getElementById('resultTotal').textContent = `$${total.toLocaleString()}`;
+  document.getElementById('resultSavings').textContent = savings > 0 ? `-$${savings.toLocaleString()}` : `+$${Math.abs(savings).toLocaleString()}`;
+  document.getElementById('resultSavings').style.color = savings > 0 ? 'var(--green)' : 'var(--red)';
+}
+
+function generate() {
+  const prompt = buildPrompt();
+  document.getElementById('resultPrompt').textContent = prompt;
+  document.getElementById('resultBox').classList.add('visible');
+  document.getElementById('resultBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function copyPrompt() {
+  const text = document.getElementById('resultPrompt').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.result-actions .btn');
+    btn.textContent = '✅ Copied!';
+    setTimeout(() => btn.textContent = '📋 Copy prompt', 2000);
+  });
+}
+
+function resetAll() {
+  // Reset state
+  Object.assign(state, {
+    budget: 'balanced', gor: 'keep', sovereign: 'keep', puffin: 'keep',
+    hotsprings: 'keep', yarra: 'selfdrive', accom: 'mid', peninsula: 'rye',
+    food: 'mix', arrive: 'skybus', depart: 'skybus', tram: 'tram',
+  });
+
+  // Reset buttons
+  document.querySelectorAll('.option-btn').forEach(btn => {
+    btn.classList.remove('selected');
+    if (btn.dataset.value === 'keep' || btn.dataset.value === 'balanced' ||
+        btn.dataset.value === 'selfdrive' || btn.dataset.value === 'mid' ||
+        btn.dataset.value === 'rye' || btn.dataset.value === 'mix' ||
+        btn.dataset.value === 'skybus' || btn.dataset.value === 'tram') {
+      btn.classList.add('selected');
+    }
+  });
+
+  // Reset toggles
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    if (['wineTasting', 'insurance'].includes(cb.id)) cb.checked = true;
+    else cb.checked = false;
+  });
+
+  // Hide swap cards
+  document.getElementById('gor-swap').style.display = 'none';
+  document.getElementById('puffin-swap').style.display = 'none';
+
+  // Hide result
+  document.getElementById('resultBox').classList.remove('visible');
+  updateBudgetBar();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Toggle event listeners
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+  cb.addEventListener('change', () => {
+    updateBudgetBar();
+    if (document.getElementById('resultBox').classList.contains('visible')) {
+      const prompt = buildPrompt();
+      document.getElementById('resultPrompt').textContent = prompt;
+      updateResult();
+    }
+  });
+});
+
+// Init
+updateBudgetBar();
+document.getElementById('gor-swap').style.display = 'none';
+document.getElementById('puffin-swap').style.display = 'none';
+</script>
+</body>
+</html>

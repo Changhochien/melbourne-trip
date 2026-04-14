@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melbourne Trip — Detailed Timeline</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0a0a14;
+    --card: #12122a;
+    --card2: #1a1a38;
+    --border: #2a2a50;
+    --accent: #e85d04;
+    --text: #d8d8f0;
+    --muted: #8888aa;
+    --green: #4ade80;
+    --blue: #60a5fa;
+    --yellow: #fbbf24;
+    --purple: #a78bfa;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px; }
+  h1 { text-align: center; color: var(--accent); font-size: 28px; margin-bottom: 6px; }
+  .subtitle { text-align: center; color: var(--muted); font-size: 13px; margin-bottom: 32px; }
+  .summary { max-width: 900px; margin: 0 auto 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+  .summary-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; }
+  .summary-card .num { font-size: 28px; font-weight: 800; color: var(--accent); }
+  .summary-card .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+  .timeline { max-width: 900px; margin: 0 auto; }
+  .day-block { margin-bottom: 40px; }
+  .day-title { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .day-badge { background: var(--accent); color: white; font-size: 13px; font-weight: 700; padding: 4px 14px; border-radius: 20px; }
+  .day-theme { color: var(--muted); font-size: 14px; }
+  .day-theme strong { color: var(--text); }
+  .events { display: flex; flex-direction: column; gap: 10px; }
+  .event { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; border-left: 4px solid var(--accent); }
+  .event.gor { border-left-color: #f97316; }
+  .event.gold { border-left-color: #fbbf24; }
+  .event.cbd { border-left-color: #4ade80; }
+  .event.beach { border-left-color: #60a5fa; }
+  .event.puffin { border-left-color: #a78bfa; }
+  .event.penin { border-left-color: #f472b6; }
+  .event.yarra { border-left-color: #06b6d4; }
+  .event.depart { border-left-color: #ef4444; }
+  .event-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  .event-time { background: var(--card2); color: var(--blue); font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 6px; font-family: monospace; }
+  .event-title { font-size: 16px; font-weight: 700; color: var(--text); }
+  .event-cost { margin-left: auto; background: #1a2a1a; color: var(--green); font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 6px; }
+  .event-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .event-desc ul { margin-top: 8px; padding-left: 20px; }
+  .event-desc li { margin-bottom: 3px; }
+  .event-desc strong { color: var(--yellow); }
+  .event-desc .highlight { color: var(--text); }
+  .booking-note { background: #1a1a30; border: 1px dashed #444466; border-radius: 8px; padding: 10px 14px; font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .booking-note::before { content: "📋 "; }
+  .tips { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; max-width: 900px; margin: 40px auto 0; }
+  .tips h2 { color: var(--accent); font-size: 18px; margin-bottom: 16px; }
+  .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .tip { background: var(--card2); border-radius: 8px; padding: 14px; }
+  .tip-title { font-size: 13px; font-weight: 700; color: var(--yellow); margin-bottom: 6px; }
+  .tip-body { font-size: 12px; color: var(--muted); line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<h1>Melbourne Trip — Day by Day Timeline</h1>
+<p class="subtitle">July 1–10, 2025 · 2 travelers · Optimized itinerary with real prices</p>
+
+<div class="summary">
+  <div class="summary-card"><div class="num">$3,340</div><div class="label">Est. Total (2p)</div></div>
+  <div class="summary-card"><div class="num">$845</div><div class="label">Tours (KKday)</div></div>
+  <div class="summary-card"><div class="num">$1,720</div><div class="label">Accommodation</div></div>
+  <div class="summary-card"><div class="num">$240</div><div class="label">Car Rental</div></div>
+  <div class="summary-card"><div class="num">$135</div><div class="label">Hot Springs</div></div>
+  <div class="summary-card"><div class="num">10</div><div class="label">Days</div></div>
+</div>
+
+<div class="timeline">
+
+<!-- DAY 1 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 1</span><span class="day-theme"><strong>Jul 1 (Tue)</strong> — Arrival Night</span></div>
+  <div class="events">
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">Evening</span>
+        <span class="event-title">Arrive Melbourne Airport (MEL)</span>
+      </div>
+      <div class="event-desc">
+        Flight arrives in the evening. Collect luggage, clear immigration.
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">~18:00–18:30</span>
+        <span class="event-title">SkyBus → Southern Cross Station</span>
+        <span class="event-cost">$22.60/p · 2p = $45.20</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Buy SkyBus tickets online or at airport counter (online = slightly cheaper)</li>
+          <li>Departures every 10-15 min from MEL terminal</li>
+          <li>Journey: ~30-40 min to Southern Cross Station ( Spencer St, CBD)</li>
+          <li><strong>Tip:</strong> Download SkyBus app for real-time departure info</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">~19:00</span>
+        <span class="event-title">Check in — Melbourne CBD Hotel</span>
+        <span class="event-cost">$180-220/night × 5 nights</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Walk or short tram to your hotel</li>
+          <li>Recommended: Space Hotel, YHA Metro, or Mantra on Little Collins</li>
+          <li>Hotel near tram lines = easy access for all CBD days</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">~20:00</span>
+        <span class="event-title">Light dinner near hotel</span>
+        <span class="event-cost">~$30-40</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Laneway restaurant or hotel restaurant</li>
+          <li>Keep it light — big days start tomorrow!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 2</span><span class="day-theme"><strong>Jul 2 (Wed)</strong> — Great Ocean Road Day Tour</span></div>
+  <div class="events">
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">07:00–07:30</span>
+        <span class="event-title">Hotel pickup — CBD</span>
+        <span class="event-cost">~$95/p AUD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>KKday or Klook bus picks up from your CBD hotel</li>
+          <li><strong>BOOK:</strong> <span class="highlight">kkday.com/en/product/129669</span></li>
+          <li><strong>BOOK:</strong> <span class="highlight">klook.com/en-AU/activity/1826</span></li>
+          <li>Compare both — Klook often 10-15% cheaper</li>
+        </ul>
+        <div class="booking-note">Book 1-2 weeks ahead — July school holidays = popular. Check "small group" option for fewer people</div>
+      </div>
+    </div>
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">09:30–10:15</span>
+        <span class="event-title">Stop 1 — Lorne</span>
+        <span class="event-cost">Coffee ~$8/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>First major coastal town on Great Ocean Road</li>
+          <li>Walk the main street, beach lookouts</li>
+          <li>45-60 min stop — grab a coffee</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">11:30–12:30</span>
+        <span class="event-title">Stop 2 — Apollo Bay</span>
+        <span class="event-cost">Lunch ~$25-35/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Lunch stop — fish and chips, cafes along the harbor</li>
+          <li>Great Ocean Rd memorial arch nearby</li>
+          <li>60 min for lunch + stretch legs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">14:30–16:00</span>
+        <span class="event-title">Stop 3 — Twelve Apostles</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>The iconic limestone stacks — most photographed stop</li>
+          <li>Boardwalk from visitor centre, multiple viewing platforms</li>
+          <li>~90 min to walk, photo, take in the scale</li>
+          <li>Note: Only 8 stacks remain (was 9 — one collapsed in 2005)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">16:30–17:15</span>
+        <span class="event-title">Stop 4 — Loch Ard Gorge</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>5 min from Twelve Apostles — shipwreck history</li>
+          <li>Dramatic cliffs, coves, blowholes</li>
+          <li>Usually less crowded than 12 Apostles</li>
+          <li>Named after the Loch Ard shipwreck (1878) — only 2 survivors</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gor">
+      <div class="event-header">
+        <span class="event-time">17:30 → 21:30</span>
+        <span class="event-title">Return to Melbourne CBD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>2-2.5 hour drive back (scenic route inland)</li>
+          <li>Drop off at original hotel pickup points ~9:30 PM</li>
+          <li>Recommend packing snacks for the long drive</li>
+        </ul>
+        <div class="booking-note">July = winter in Victoria. Pack a warm layer even on sunny days — coastal wind chill is real. Rain jacket essential.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 3</span><span class="day-theme"><strong>Jul 3 (Thu)</strong> — Sovereign Hill Gold Town</span></div>
+  <div class="events">
+    <div class="event gold">
+      <div class="event-header">
+        <span class="event-time">07:30–08:00</span>
+        <span class="event-title">Hotel pickup — CBD</span>
+        <span class="event-cost">~$85/p AUD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>KKday tour to Sovereign Hill, Ballarat</li>
+          <li><strong>BOOK:</strong> <span class="highlight">kkday.com/en/product/10169</span></li>
+          <li>Allow extra time — this is a full day</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gold">
+      <div class="event-header">
+        <span class="event-time">09:30–10:00</span>
+        <span class="event-title">Arrive Sovereign Hill</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Open-air 1850s gold rush museum</li>
+          <li>Staff in period costume throughout the town</li>
+          <li>Allocate minimum <strong>3-4 hours</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gold">
+      <div class="event-header">
+        <span class="event-time">10:00–14:00</span>
+        <span class="event-title">Sovereign Hill Highlights</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Gold panning</strong> — try your luck at finding gold! (included)</li>
+          <li><strong>Underground mine tour</strong> — guided descent into 1850s mine shaft</li>
+          <li><strong>Red Hill Gully Gold Diggings</strong> — working steam-powered equipment</li>
+          <li><strong>Candle making</strong> — watch and participate</li>
+          <li><strong>Tintype photography</strong> — vintage photo to take home</li>
+          <li><strong>Gold Museum</strong> — gold jewellery, coins, history (next door, included)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gold">
+      <div class="event-header">
+        <span class="event-time">14:00–15:00</span>
+        <span class="event-title">Lunch in Ballarat</span>
+        <span class="event-cost">~$25-35/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Cafés along Sturt Street or Lydiard Street</li>
+          <li>Ballarat is a substantial gold-rush era town — historic buildings worth seeing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event gold">
+      <div class="event-header">
+        <span class="event-time">15:30 → 17:30</span>
+        <span class="event-title">Return to Melbourne CBD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>~115 km drive, ~1.5 hours</li>
+          <li>Arrive hotel late afternoon — time to rest or explore nearby</li>
+          <li>Evening: light dinner, early night (long drive Day 2 + full day today)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 4</span><span class="day-theme"><strong>Jul 4 (Fri)</strong> — QVM + CBD Laneways + Arts Precinct</span></div>
+  <div class="events">
+    <div class="event cbd">
+      <div class="event-header">
+        <span class="event-time">08:00–09:00</span>
+        <span class="event-title">Breakfast + coffee in laneway cafe</span>
+        <span class="event-cost">~$15-20/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Experience Melbourne coffee culture — hole-in-the-wall café</li>
+          <li>Try a flat white (origin contested but Melbourne owns it)</li>
+          <li>Walk to [[melbourne-laneways]]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event cbd">
+      <div class="event-header">
+        <span class="event-time">09:00–12:00</span>
+        <span class="event-title">Queen Victoria Market</span>
+        <span class="event-cost">Market produce ~$20-40</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Open:</strong> Tue/Thu/Fri 6am-3pm, Sat 6am-4pm, Sun 9am-4pm</li>
+          <li><strong>Today is Friday</strong> — 6am-5pm, best day for fresh produce</li>
+          <li>Arrive 8-9am for best selection, less crowded</li>
+          <li>Must-buys: fresh fruit, deli meats, Victorian cheese, bakery items</li>
+          <li>Cash preferred by some stalls — ATM on site (fees apply)</li>
+          <li>The Meat and Fish Hall is a highlight</li>
+        </ul>
+        <div class="booking-note">Friday is one of the best market days — full produce + some specialty stalls. Don't miss the southern end (the "Sheds") for souvenirs.</div>
+      </div>
+    </div>
+    <div class="event cbd">
+      <div class="event-header">
+        <span class="event-time">12:00–14:00</span>
+        <span class="event-title">CBD Heritage + Laneways Walk</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Hosier Lane</strong> — Melbourne's most famous street art lane</li>
+          <li><strong>Block Arcade</strong> — 1890s heritage shopping arcade</li>
+          <li><strong>Royal Arcade</strong> — Melbourne's oldest arcade (1870)</li>
+          <li><strong>Little Collins Street</strong> — boutiques, more laneway entrances</li>
+          <li><strong>Flinders Lane</strong> — galleries, design studios</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event cbd">
+      <div class="event-header">
+        <span class="event-time">14:30–17:00</span>
+        <span class="event-title">Southbank Arts Precinct</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>NGV International</strong> (free entry) — Australia's oldest art museum</li>
+          <li><strong>ACMI</strong> — Australian Centre for the Moving Image (film/TV/digital)</li>
+          <li>Walk along the Yarra, cross via pedestrian bridge to Fed Square</li>
+          <li>NGV Current: Check nga.gov.au for major exhibitions (ticketed)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event cbd">
+      <div class="event-header">
+        <span class="event-time">17:30–20:00</span>
+        <span class="event-title">Dinner — CBD or Southbank</span>
+        <span class="event-cost">~$50-80/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Southbank has excellent riverside options</li>
+          <li>Chinatown (Little Bourke St) nearby — great value Asian food</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 5 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 5</span><span class="day-theme"><strong>Jul 5 (Sat)</strong> — Fitzroy + St Kilda</span></div>
+  <div class="events">
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">09:00–09:30</span>
+        <span class="event-title">Tram to Fitzroy</span>
+        <span class="event-cost">Myki Zone 1</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Tram 11 or 12 from CBD (~15 min) to Brunswick St, Fitzroy</li>
+          <li>[[fitzroy]] — Melbourne's oldest inner suburb, alternative culture</li>
+          <li>Pick up a morning coffee on Brunswick Street</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">09:30–12:30</span>
+        <span class="event-title">Fitzroy Morning</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Brunswick Street</strong> — main strip, cafes, pubs, vintage shops</li>
+          <li><strong>Gertrude Street</strong> — boutiques, local galleries</li>
+          <li><strong>Smith Street</strong> — rapid gentrification, new restaurants (lunch here)</li>
+          <li><strong>Op shops</strong> — Fitzroy is vintage/thrift shopping heaven</li>
+          <li>Experience Melbourne coffee culture at its best — Seven Seeds, Proud Mary nearby</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event beach">
+      <div class="event-header">
+        <span class="event-time">13:30–14:30</span>
+        <span class="event-title">Tram 96 — St Kilda</span>
+        <span class="event-cost">Free Tram Zone (no Myki needed)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Tram 96 runs from Bourke St (CBD) direct to St Kilda (~25 min)</li>
+          <li>One of the world's most iconic tram routes — sit on the right for bay views</li>
+          <li>[[st-kilda]] — Melbourne's beachside suburb</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event beach">
+      <div class="event-header">
+        <span class="event-time">14:30–16:30</span>
+        <span class="event-title">St Kilda Exploration</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>St Kilda Pier</strong> — walk the breakwater, historic Kelpie kiosk</li>
+          <li><strong>Acland Street</strong> — famous Jewish bakeries: Dagmar's, St Kilda Cake House</li>
+          <li><strong>Luna Park</strong> — entrance photo (the giant cartoon face), rides optional</li>
+          <li>Beach walk if weather permits — cold but scenic in July</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event beach">
+      <div class="event-header">
+        <span class="event-time">17:00–18:30</span>
+        <span class="event-title">Sunset at St Kilda Pier</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>July sunset: ~5:15 PM</li>
+          <li>Beautiful evening walk along the breakwater</li>
+          <li>Sometimes see penguins in the breakwater rocks below the pier</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">19:00–21:00</span>
+        <span class="event-title">Dinner — Acland Street or return to Fitzroy</span>
+        <span class="event-cost">~$40-60/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Acland Street: good Italian, pub options</li>
+          <li>Or tram back to Fitzroy for Johnston Street's Spanish/Latin quarter restaurants</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 6 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 6</span><span class="day-theme"><strong>Jul 6 (Sun)</strong> — Puffing Billy + Phillip Island</span></div>
+  <div class="events">
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">07:00</span>
+        <span class="event-title">Early pickup — CBD Hotels</span>
+        <span class="event-cost">~$135/p AUD (combined)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Very long day — departs ~7 AM, returns ~9:30-10 PM</li>
+          <li><strong>BOOK:</strong> KKday "Puffing Billy + Phillip Island" combined tour</li>
+          <li>Most exhausting day of the trip — pace yourself</li>
+        </ul>
+        <div class="booking-note">This is a COMBINED tour — much better value than booking Puffing Billy and Phillip Island separately. Do NOT try to self-drive this — the distances and timing are brutal for 2 people.</div>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">08:30–09:30</span>
+        <span class="event-title">Drive to Belgrave (Dandenong Ranges)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>East of Melbourne, ~70 km, ~1 hour</li>
+          <li>Scenic drive through the Dandenong Ranges forest</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">10:00–11:30</span>
+        <span class="event-title">Puffing Billy Railway</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Route:</strong> Belgrave → Lakeside (~1 hour each way)</li>
+          <li>Heritage narrow-gauge railway — open-sided carriages</li>
+          <li>Famous wooden trestle bridge — photo stop</li>
+          <li>Spectacular Dandenong Ranges forest views</li>
+          <li>Bring a picnic or buy at Lakeside station</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">13:00–14:00</span>
+        <span class="event-title">Lunch — Between Puffing Billy and Phillip Island</span>
+        <span class="event-cost">~$25/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Stop in Koo Wee Rup or Cranbourne area</li>
+          <li>Typical country pub lunch</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">14:30–15:30</span>
+        <span class="event-title">Koala Conservation Centre</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Boardwalks through eucalyptus forest</li>
+          <li>Koalas visible high in trees — bring binoculars!</li>
+          <li>Also see kangaroos, wombats, echidnas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">15:30–16:00</span>
+        <span class="event-title">The Nobbies — Coastal Views</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Dramatic Southern Ocean coastline</li>
+          <li>Seal colonies below the cliff (best seen with binoculars)</li>
+          <li>Quick stop — 20-30 min</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">16:00–17:30</span>
+        <span class="event-title">Penguin Parade — Summerland Beach</span>
+        <span class="event-cost">Included in tour</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>ARRIVE BY 4:00-4:30 PM</strong> — essential in July</li>
+          <li>July sunset ~5:15 PM — penguins come ashore after sunset</li>
+          <li>General viewing = included. Upgrade to <strong>Penguin Plus</strong> (+$20-25/p) for elevated platform — much better views</li>
+          <li>Little (fairy) penguins — smallest penguin species, ~33cm tall</li>
+          <li>Silence and no photography after the penguins land (flash disturbs them)</li>
+        </ul>
+        <div class="booking-note">CRITICAL: July evening at Phillip Island = 5-8°C, strong Southern Ocean wind, exposed beach. FULL WARM LAYERS: thermals, fleece, windproof jacket, beanie, gloves. Standing still for 90 min in July wind chill is brutal without proper gear.</div>
+      </div>
+    </div>
+    <div class="event puffin">
+      <div class="event-header">
+        <span class="event-time">18:00 → 21:30</span>
+        <span class="event-title">Return to Melbourne CBD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>~90 km, ~1.5-2 hours drive</li>
+          <li>Arrive hotel ~9:30-10:30 PM — late night</li>
+          <li>Tomorrow: check out, pick up rental car, drive to Mornington Peninsula</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 7 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 7</span><span class="day-theme"><strong>Jul 7 (Mon)</strong> — Drive to Mornington Peninsula</span></div>
+  <div class="events">
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">07:00–09:00</span>
+        <span class="event-title">Check out + Pick up rental car</span>
+        <span class="event-cost">~$70-90/day × 2 days</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Check out of CBD hotel</li>
+          <li>Pick up car from Thrifty/Budget/JUCY in CBD (reserve online night before)</li>
+          <li>July school holidays = high demand — reserve NOW</li>
+          <li>Full coverage insurance recommended: +$20-30/day</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">09:00–10:15</span>
+        <span class="event-title">Drive: Melbourne CBD → Rye</span>
+        <span class="event-cost">75 km · ~1h15</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Route: M1 south → Nepean Hwy → Marine Dr → Rye</li>
+          <li>Scenic coastal approach on the way down</li>
+          <li>Stop at Half Moon Bay (Black Rock) for a quick beach look if time</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">10:30–12:30</span>
+        <span class="event-title">Arthurs Seat + Cape Schanck</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Arthurs Seat</strong> — highest point on the peninsula, panoramic views</li>
+          <li><strong>Cape Schanck Lighthouse</strong> — coastal walk, dramatic cliffs</li>
+          <li>Walk the Bushrangers Bay track if energetic (2.5 km, 1hr)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">13:00–15:00</span>
+        <span class="event-title">Red Hill Wine Region — Cellar Doors</span>
+        <span class="event-cost">Tasting ~$10-15/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Mornington Peninsula = cool-climate pinot noir + chardonnay country</li>
+          <li><strong>Ten Minutes by Tractor</strong> — cellar door with excellent views</li>
+          <li><strong>Port Phillip Estate</strong> — award-winning restaurant + cellar door</li>
+          <li><strong>Crittenden Estate</strong> — established producer, good pinot noir</li>
+          <li>Do 2-3 cellar doors max — tasting fees are worth it here</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">15:30–17:00</span>
+        <span class="event-title">Sorrento or Portsea Exploration</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Sorrento</strong> — upmarket beach town, ferry to Queenscliff</li>
+          <li><strong>Portsea</strong> — tip of the peninsula, rocky beach, Point Nepean National Park</li>
+          <li>Ocean Beach (Portsea) — dramatic Southern Ocean surf beach</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">17:00–18:00</span>
+        <span class="event-title">Check in — Rye Accommodation</span>
+        <span class="event-cost">~$180-250/night × 2 nights</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Airbnb apartment: "Rye 2BR beach apartment" — $180-250/night</li>
+          <li>RACV Holiday Park cabin: $120-180/night</li>
+          <li>Book NOW — July school holidays fill up 2-3 weeks ahead</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">19:00–21:00</span>
+        <span class="event-title">Dinner — Rye or Rosebud</span>
+        <span class="event-cost">~$50-70/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Rye has solid pub dining and restaurants along Point Nepean Rd</li>
+          <li>Rosebud has fish and chip shops — casual and cheap</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 8 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 8</span><span class="day-theme"><strong>Jul 8 (Tue)</strong> — Hot Springs + Return to Melbourne CBD</span></div>
+  <div class="events">
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">08:00–09:00</span>
+        <span class="event-title">Breakfast at accommodation</span>
+        <span class="event-cost">~$15-20</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Self-cater using QVM purchases from Day 4</li>
+          <li>Or local café in Rye</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">09:00–09:20</span>
+        <span class="event-title">Drive: Rye → Peninsula Hot Springs</span>
+        <span class="event-cost">20 min · 18 km</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Mount Martha, 18 km north of Rye</li>
+          <li>Parking: free on site</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event penin">
+      <div class="event-header">
+        <span class="event-time">09:30–13:30</span>
+        <span class="event-title">Peninsula Hot Springs — Bathe</span>
+        <span class="event-cost">~$52/p AUD (2-3hr session)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>BOOK:</strong> <span class="highlight">peninsulahotsprings.com</span> — book NOW, sells out</li>
+          <li><strong>Session options:</strong></li>
+          <li>Bath House (2-3 hr): ~$52/p — main thermal pools, good first time</li>
+          <li>Full Day Pass (5 hr): ~$75/p — if you want to linger</li>
+          <li>Hilltop Pool (add-on): premium hillside pools with bay views</li>
+          <li><strong>What to bring:</strong> Swimwear, towel (or rent $5), robe (or rent)</li>
+          <li>Wear: waterproof sandals (optional), everything else provided</li>
+        </ul>
+        <div class="booking-note">Morning session recommended for July — you'll have the afternoon to drive back to Melbourne. Book "Bath House" general entry for first visit. The hillside pools are worth it if crowded. Book 1-2 weeks ahead minimum.</div>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">14:00–15:00</span>
+        <span class="event-title">Lunch — Sorrento or Rosebud</span>
+        <span class="event-cost">~$30-45/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Fish and chips on the beach at Sorrento or Rosebud</li>
+          <li>Or a pub lunch in Dromana</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">15:00–16:30</span>
+        <span class="event-title">Optional: Dromana or Safety Beach</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Quick beach walk or cone at Dromana</li>
+          <li>Or skip and start driving back early — beat Melbourne evening traffic</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">16:30–17:45</span>
+        <span class="event-title">Drive: Mornington → Melbourne CBD</span>
+        <span class="event-cost">75 km · ~1h15</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Return car at CBD or near Southern Cross Station if convenient</li>
+          <li>Check traffic — M1 can be busy 4:30-6:30 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">18:00–19:00</span>
+        <span class="event-title">Check in — Melbourne CBD (Nights 8-9)</span>
+        <span class="event-cost">$180-220/night</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Same hotel area as before — easy tram access for Day 9</li>
+          <li>Or a different hotel near Southern Cross (convenient for airport transport Day 10)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">19:30–21:00</span>
+        <span class="event-title">Final evening dinner — Melbourne</span>
+        <span class="event-cost">~$60-80/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Choose a restaurant you've been wanting to try</li>
+          <li>One last flat white from a laneway café</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 9 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 9</span><span class="day-theme"><strong>Jul 9 (Wed)</strong> — Yarra Valley Day Trip</span></div>
+  <div class="events">
+    <div class="event yarra">
+      <div class="event-header">
+        <span class="event-time">08:00</span>
+        <span class="event-title">Pick up rental car (or keep from yesterday)</span>
+        <span class="event-cost">~$70-90 (Day 9)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Self-drive is better value for 2 people vs tour ($90/person guided)</li>
+          <li>1 hour drive to Healesville</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event yarra">
+      <div class="event-header">
+        <span class="event-time">09:00–11:00</span>
+        <span class="event-title">Drive: Melbourne CBD → Healesville</span>
+        <span class="event-cost">60 km · ~1h</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Route: M1 north → Hume Fwy → Melba Highway south to Healesville</li>
+          <li>Scenic route through the Yarra Ranges</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event yarra">
+      <div class="event-header">
+        <span class="event-time">11:00–13:30</span>
+        <span class="event-title">Healesville Sanctuary</span>
+        <span class="event-cost">~$40/p AUD</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>BOOK:</strong> <span class="highlight">healesvillesanctuary.org.au</span></li>
+          <li>Open 9am-5pm — arrive at opening for best wildlife</li>
+          <li>Australia's premier wildlife sanctuary — open-range bush setting</li>
+          <li><strong>Must-see:</strong> Platypus (best before noon), koala walk, kangaroo enclosure</li>
+          <li>Walking tracks: 1-2 hours to see everything</li>
+          <li>Café on site for lunch ($20-30/p) or bring a picnic</li>
+        </ul>
+        <div class="booking-note">Healesville Sanctuary tickets MUST be booked online — not available at door. Book at least 1 week ahead for July weekends.</div>
+      </div>
+    </div>
+    <div class="event yarra">
+      <div class="event-header">
+        <span class="event-time">13:30–17:00</span>
+        <span class="event-title">Yarra Valley Wineries — Cellar Doors</span>
+        <span class="event-cost">~$15-30/p for tastings</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li><strong>Yering Station</strong> — historic winery, excellent cellar door, Yarra Valley pioneer</li>
+          <li><strong>Oakridge</strong> — acclaimed winery restaurant, great chardonnay</li>
+          <li><strong>Coldstream Hills</strong> — reliable, good-value cellar door</li>
+          <li><strong>Innocent Bystander</strong> — approachable, fun atmosphere</li>
+          <li>Visit 3 wineries max — the wine quality is consistently high</li>
+          <li>Designated driver option: spittoons provided, or pre-book a driver</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event yarra">
+      <div class="event-header">
+        <span class="event-time">17:00–18:00</span>
+        <span class="event-title">Drive: Yarra Valley → Melbourne CBD</span>
+        <span class="event-cost">55 km · ~1h</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Return rental car if keeping overnight</li>
+          <li>Arrive hotel ~6-7 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-header">
+        <span class="event-time">19:00–21:00</span>
+        <span class="event-title">Final Melbourne dinner</span>
+        <span class="event-cost">~$60-80/p</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Celebration dinner — last night in Melbourne</li>
+          <li>Consider: Chin Chin (Thai, great), Supernormal (Japanese), Lygon Street Italian</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 10 -->
+<div class="day-block">
+  <div class="day-title"><span class="day-badge">Day 10</span><span class="day-theme"><strong>Jul 10 (Thu)</strong> — Departure Day</span></div>
+  <div class="events">
+    <div class="event depart">
+      <div class="event-header">
+        <span class="event-time">08:00–09:30</span>
+        <span class="event-title">Final Melbourne morning</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>One last flat white in a laneway café</li>
+          <li>Early morning walk: Hosier Lane without crowds</li>
+          <li>Last-minute shopping at Melbourne Central or Emporium</li>
+          <li>Souvenirs: Tim Tams, Melbourne-themed gifts at QVM (if Sunday)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event depart">
+      <div class="event-header">
+        <span class="event-time">10:00–11:00</span>
+        <span class="event-title">Check out of hotel</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Standard check-out: 10-11 AM</li>
+          <li>Store luggage at hotel if needed before airport</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event depart">
+      <div class="event-header">
+        <span class="event-time">11:00–13:00</span>
+        <span class="event-title">Optional: Additional sightseeing or shopping</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Return to a favorite spot from the trip</li>
+          <li>State Library Victoria — stunning historic reading room (free)</li>
+          <li>Royal Botanic Gardens — winter morning walk</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event depart">
+      <div class="event-header">
+        <span class="event-time">14:00–15:00</span>
+        <span class="event-title">Head to airport</span>
+        <span class="event-cost">~$55 taxi OR $22.60/p SkyBus</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Allow 3.5-4 hours before flight for international; 2.5-3 hours for domestic</li>
+          <li><strong>SkyBus:</strong> From Southern Cross Station (near most hotels) — $22.60/p, ~30 min</li>
+          <li><strong>Taxi/Rideshare:</strong> ~$50-60 from CBD — 30-60 min depending on traffic</li>
+          <li>For 2 people: SkyBus $45 vs taxi $55 — similar cost, SkyBus more reliable in traffic</li>
+        </ul>
+      </div>
+    </div>
+    <div class="event depart">
+      <div class="event-header">
+        <span class="event-time">Evening</span>
+        <span class="event-title">Fly out of Melbourne Airport (MEL)</span>
+      </div>
+      <div class="event-desc">
+        <ul>
+          <li>Enjoy duty-free if international departure</li>
+          <li>End of trip!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- TIPS -->
+<div class="tips">
+  <h2>Key Tips & Reminders</h2>
+  <div class="tips-grid">
+    <div class="tip">
+      <div class="tip-title">Book Tours NOW</div>
+      <div class="tip-body">KKday/Klook tours for Days 2, 3, 6 need booking 1-2 weeks ahead for July school holidays. Hot Springs (Day 8) needs booking 1-2 weeks ahead.</div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">Myki Card</div>
+      <div class="tip-body">Buy at 7-Eleven or airport on arrival. Top up $30-40. Zone 1 covers all inner Melbourne. Free Tram Zone covers CBD.</div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">July Weather</div>
+      <div class="tip-body">6-14°C, rain 10-12 days. Layers essential. Rain jacket (not umbrella — sideways rain). Warm jacket for penguin parade.</div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">Car Rental — Days 7-8</div>
+      <div class="tip-body">Reserve NOW. Full coverage insurance recommended. Pick up Day 7 morning, return Day 8 evening at CBD. ~$70-90/day economy.</div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">School Holidays</div>
+      <div class="tip-body">NSW/Vic school holidays start ~July 1. Expect more families at attractions. Book everything in advance.</div>
+    </div>
+    <div class="tip">
+      <div class="tip-title">Airport — MEL</div>
+      <div class="tip-body">Melbourne Airport (MEL) — 30 km northwest of CBD. SkyBus is cheapest + most reliable. Uber ~$55-70 from CBD.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
